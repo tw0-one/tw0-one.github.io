@@ -1,259 +1,304 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="山河远阔，人间星河">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tw0的小站">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="tw0的小站">
+<meta property="og:description" content="山河远阔，人间星河">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="tw0_one">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="canonical" href="http://example.com/">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-<meta name="generator" content="Hexo 6.0.0"></head>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+  <title>tw0的小站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="tw0的小站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">tw0的小站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
-</header>
+</div>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-一些小知识" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" class="article-date">
-  <time class="dt-published" datetime="2022-01-05T14:23:13.124Z" itemprop="datePublished">2022-01-05</time>
-</a>
-    
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于我</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
   </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="MIME是什么"><a href="#MIME是什么" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
-<p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
-<p>是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会<strong>自动使用</strong>指定应用程序来打开。多用于指定一些客户端<strong>自定义</strong>的文件名，以及一些媒体文件打开方式。</p>
-<h3 id="MIME嗅探"><a href="#MIME嗅探" class="headerlink" title="MIME嗅探"></a><code>MIME</code>嗅探</h3><p>在缺失<code> MIME</code> 类型或客户端认为文件设置了错误的 <code>MIME</code> 类型时，浏览器可能会通过查看资源来进行<code>MIME</code>嗅探。每一个浏览器在不同的情况下会执行不同的操作。因为这个操作会有一些安全问题，有的 <code>MIME </code>类型表示可执行内容而有些是不可执行内容。浏览器可以通过请求头 <code>Content-Type</code> 来设置 <code>X-Content-Type-Options</code> 以阻止<code>MIME</code>嗅探。</p>
-<h2 id="robots协议？"><a href="#robots协议？" class="headerlink" title="robots协议？"></a><code>robots</code>协议？</h2><p><code>robots</code>协议也叫<code>robots.txt</code>（统一小写）是一种存放于网站根目录下的ASCII编码的文本文件，它通常告诉网络搜索引擎的漫游器（又称网络蜘蛛），此网站中的哪些内容是不应被搜索引擎的漫游器获取的，哪些是可以被漫游器获取的。因为一些系统中的URL是大小写敏感的，所以<code>robots.txt</code>的文件名应统一为<strong>小写</strong>。<code>robots.txt</code>应放置于网站的根目录下。</p>
-<p><strong><code>robots</code>协议并不是一个规范，而只是约定俗成的，所以并不能保证网站的隐私。</strong></p>
-<h2 id="后缀为-phps的文件是什么？"><a href="#后缀为-phps的文件是什么？" class="headerlink" title="后缀为.phps的文件是什么？"></a>后缀为<code>.phps</code>的文件是什么？</h2><p><code>phps</code>文件是php的源代码文件，通常用于提供给用户（访问者）查看php代码，因为用户无法直接通过Web浏览器看到php文件的内容，所以需要用<code>phps</code>文件代替。(其实，只要不用php等已经在服务器中注册过的MIME类型为文件即可，但为了国际通用，所以才用了<code>phps</code>文件类型。)</p>
-<p>但并不是所有php文件都有<code>.phps</code>后缀文件</p>
-<h2 id="htaccess文件是什么？"><a href="#htaccess文件是什么？" class="headerlink" title=".htaccess文件是什么？"></a><code>.htaccess</code>文件是什么？</h2><p><code>.htaccess</code>是一个配置文件(纯文本文件)，里面存放着<code>Apache</code>服务器配置相关的一些指令，它类似于Apache的站点配置文件，如<code>httpd.conf</code>（<code>Apache2</code>已经支持多站点，因此你的站点配置文件可能在<code>/etc/apache2/conf.d/</code>目录下）。</p>
-<p><code>.htaccess</code>与<code>httpd.conf</code>配置文件不同的是，它只作用于当前目录。另外<code>httpd.conf</code>是在<code>Apache</code>服务启动的时候就加载的，而<code>.htaccess</code>只有在用户访问目录时加载，开销大、速度慢。</p>
-<p>既然如此，为什么我们还要用<code>.htaccess</code>呢？因为它配置起来简单，它还支持网页301重定向、自定义404错误页面、改变文件扩展名、允许/阻止特定的用户或者目录的访问、禁止目录列表、配置默认文档等功能，另外它管理起来很方便，可以很好适应网站迁移。</p>
-<h2 id="Tor浏览器"><a href="#Tor浏览器" class="headerlink" title="Tor浏览器"></a>Tor浏览器</h2><p>一款是你匿名访问网络的的软件。用户通过<code>Tor</code>可以在因特网上进行匿名交流。(基于火狐浏览器的浏览器)，后缀为<code>onion</code>的网站需要用此浏览器访问。</p>
-<p>为了实现匿名目的，<code>Tor</code>把分散在全球的计算机集合起来形成一个加密回路。当你通过<code>Tor</code>网络访问互联网时，你的网络数据会通过多台电脑迂回发送，就像洋葱包裹其核心那样掩饰你的网络活动，信息传输在每一步都被加密，无从得知你所处位置和信息传输目的地。因此<code>Tor Browser</code>也被称为洋葱浏览器。</p>
-<h2 id="移位计算的一个特殊值"><a href="#移位计算的一个特殊值" class="headerlink" title="移位计算的一个特殊值"></a>移位计算的一个特殊值</h2><p>125&lt;&lt;3 = 1000</p>
-<p>0111 1101 &lt;&lt; 后为 0011 1110 1000 的十进制为1000</p>
-<p>同理8000&gt;&gt;3 =1000</p>
-<table>
-<thead>
-<tr>
-<th>HEX</th>
-<th>3E8</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DEC</td>
-<td>1,000</td>
-</tr>
-<tr>
-<td>OCT</td>
-<td>1750</td>
-</tr>
-<tr>
-<td>BIN</td>
-<td>0011 1110 1000</td>
-</tr>
-</tbody></table>
-<h2 id="删库跑路-rm-rf"><a href="#删库跑路-rm-rf" class="headerlink" title="删库跑路  rm -rf /*"></a>删库跑路  <code>rm -rf /*</code></h2><p><code>rm </code>命令可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉</p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-f</td>
-<td>强制删除文件或目录</td>
-</tr>
-<tr>
-<td>-i</td>
-<td>删除已有文件或目录之前先询问用户</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>递归处理， 将指定目录下的所有文件与子目录一并处理</td>
-</tr>
-<tr>
-<td>/</td>
-<td>在Linux中表示根目录</td>
-</tr>
-<tr>
-<td>*</td>
-<td>所有文件</td>
-</tr>
-<tr>
-<td>/*</td>
-<td>根目录下的所有文件</td>
-</tr>
-</tbody></table>
-<p>而<code>mv</code>命令是用来移动文件或者将文件改名，备份文件或者目录。</p>
-<h2 id="Linux系统中的反引号"><a href="#Linux系统中的反引号" class="headerlink" title="Linux系统中的反引号"></a>Linux系统中的反引号</h2><p>在<code>linux</code>中反引号的作用就是将反引号内的<code>Linux</code>命令先执行，然后将执行结果赋予变量。<br> 比如<code> cat \</code>ls` <code>相当于将 </code>ls<code>出来的结果</code>cat`。</p>
-<h2 id="jsfuck"><a href="#jsfuck" class="headerlink" title="jsfuck"></a><code>jsfuck</code></h2><p><code>jsfuck</code>源于一门编程语言<code>brainfuck</code>，其主要的思想就是只使用8种特定的符号来编写代码。而<code>jsfuck</code>也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是(、)、+、[、]、!。(用6个字符输出任意<code>JavaScript</code>)</p>
-<h2 id="sha1碰撞"><a href="#sha1碰撞" class="headerlink" title="sha1碰撞"></a><code>sha1</code>碰撞</h2><p>这两个值<code>a</code>和<code>b</code>值不同但是<code>sha1</code>值相同</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01sF%DC%91f%B6%7E%11%8F%02%9A%B6%21%B2V%0F%F9%CAg%CC%A8%C7%F8%5B%A8Ly%03%0C%2B%3D%E2%18%F8m%B3%A9%09%01%D5%DFE%C1O%26%FE%DF%B3%DC8%E9j%C2/%E7%BDr%8F%0EE%BC%E0F%D2%3CW%0F%EB%14%13%98%BBU.%F5%A0%A8%2B%E31%FE%A4%807%B8%B5%D7%1F%0E3.%DF%93%AC5%00%EBM%DC%0D%EC%C1%A8dy%0Cx%2Cv%21V%60%DD0%97%91%D0k%D0%AF%3F%98%CD%A4%BCF%29%B1</span><br></pre></td></tr></table></figure>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01%7FF%DC%93%A6%B6%7E%01%3B%02%9A%AA%1D%B2V%0BE%CAg%D6%88%C7%F8K%8CLy%1F%E0%2B%3D%F6%14%F8m%B1i%09%01%C5kE%C1S%0A%FE%DF%B7%608%E9rr/%E7%ADr%8F%0EI%04%E0F%C20W%0F%E9%D4%13%98%AB%E1.%F5%BC%94%2B%E35B%A4%80-%98%B5%D7%0F%2A3.%C3%7F%AC5%14%E7M%DC%0F%2C%C1%A8t%CD%0Cx0Z%21Vda0%97%89%60k%D0%BF%3F%98%CD%A8%04F%29%A1</span><br></pre></td></tr></table></figure>
-
-<h2 id="127-0-0-1的各种进制，一般利用十进制绕过"><a href="#127-0-0-1的各种进制，一般利用十进制绕过" class="headerlink" title="127.0.0.1的各种进制，一般利用十进制绕过"></a><code>127.0.0.1</code>的各种进制，一般利用十进制绕过</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:</span><br><span class="line">八进制：0177.0.0.1</span><br><span class="line">十六进制：0x7f.0.0.1</span><br><span class="line">十进制：2130706433</span><br></pre></td></tr></table></figure>
-
-<h2 id="ssit官方漏洞利用"><a href="#ssit官方漏洞利用" class="headerlink" title="ssit官方漏洞利用"></a><code>ssit</code>官方漏洞利用</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> c in [].<span class="keyword">__class__</span>.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;% <span class="keyword">if</span> c.__name__ == <span class="string">&#x27;catch_warnings&#x27;</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">for</span> b in c.__init__.__globals__.values() %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> b.<span class="keyword">__class__</span> == &#123;&#125;.<span class="keyword">__class__</span> %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> <span class="string">&#x27;eval&#x27;</span> in b.keys() %&#125;</span><br><span class="line">      &#123;&#123; b[<span class="string">&#x27;eval&#x27;</span>](<span class="string">&#x27;__import__(&quot;os&quot;).popen(&quot;id&quot;).read()&#x27;</span>) &#125;&#125;         <span class="comment">//poppen的参数就是要执行的命令</span></span><br><span class="line">    &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endfor</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endfor</span> %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Linux能打开文件的命令"><a href="#Linux能打开文件的命令" class="headerlink" title="Linux能打开文件的命令"></a><code>Linux</code>能打开文件的命令</h2><ul>
-<li><p><code>cat</code> 由第一行开始显示内容，并将所有内容输出</p>
-</li>
-<li><p><code>tac</code> 从最后一行倒序显示内容，并将所有内容输出</p>
-</li>
-<li><p><code>more</code> 根据窗口大小，一页一页的显示文件内容</p>
-</li>
-<li><p><code>less</code> 和<code>more</code>相似，但其优点可以往前翻页，并且进行可以搜索字符(使用<code>q</code>或者<code>ctrl</code>+<code>z</code>退出，<code>j</code>下一行,<code>k</code>上一行)</p>
-</li>
-<li><p><code>head</code> 只显示头几行</p>
-</li>
-<li><p><code>tail</code> 只显示最后几行</p>
-</li>
-<li><p><code>nl</code> 类似于cat -n，显示时输出行号</p>
-</li>
-<li><p><code>tailf</code> 类似于<code>tail -f</code></p>
-</li>
-<li><p><code>sed</code> 使用<code>sed -n &#39;p&#39; 1.txt</code>来打开文件，如果使用<code>sed &#39;p&#39; 1.txt</code>每一行会输出两次</p>
-</li>
-<li><p><code>sort</code> 将文件进行排序，并将排序结果标准输出</p>
-</li>
-<li><p><code>uniq</code> 用于报告会忽略文件中的重复行</p>
-</li>
-<li><p><code>rev</code> 将文件中的每行内容以字符为单位<strong>反序</strong>输出</p>
-</li>
-<li><p><code>cut</code> 使用<code>cut -c 1- 1.txt</code> 打卡文件 <code>1-</code>是用于指定起始位置和结束位置的，单写一个表示切割那个位置上的数并输出(从1开始)，这里的<code>1-</code>表示，从1开始到末尾</p>
-</li>
-<li><p><code>awk</code> 文本和数据进行处理的编程语言，使用<code>awk &#39;&#123;print&#125;&#39; 1.txt</code>打卡文件</p>
-</li>
-<li><p><code>stings</code> 在对象文件或二进制文件中查找可打印的字符串(可用于打卡<code>.c</code>后缀的文件)</p>
-</li>
-<li><p><code>od</code> 输出文件的八进制，十六进制等格式编码的字节，使用<code>od -c 1.txt</code>打开文件</p>
-</li>
-<li><p><code>paste</code> 用于将多个文件按照队列进行合并。可用于读取文件</p>
-</li>
-<li><p><code>diff</code> 比较给定两个文件的不同，可用于读取数据<code>diff 1.txt 2.txt</code></p>
-</li>
-<li><p><code>curl</code> 使用<code>file:///xxx/xxx.txt</code>可读取文件</p>
-</li>
-<li><p><code>bzmore</code> 查看<code>bzip2</code>压缩过的文本文件的内容</p>
-</li>
-<li><p><code>bzless</code> 是增强<code>.bz2</code>压缩包查看器，<code>bzless</code>比<code>bzmore</code>命令功能更强大</p>
-</li>
-</ul>
-<h2 id="两个-和三个-的区别"><a href="#两个-和三个-的区别" class="headerlink" title="两个==和三个===的区别"></a>两个<code>==</code>和三个<code>===</code>的区别</h2><ul>
-<li><p><code>==</code> 两边值类型不同的时候，要先进行类型转换，再比较。</p>
-<p>所以在<code>==</code>双等号的比较中以<code>0e</code>开头的都会转化成科学计数法。而科学计数法中<code>0</code>乘任何数都是0。</p>
-</li>
-<li><p><code>===</code> 不做类型转换，类型不同的一定不等。</p>
-</li>
-</ul>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" data-id="cky1mrw6800001kvcboznfzus" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
   </div>
-  
-</article>
 
+</div>
+    </header>
 
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/05/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-01-05T14:19:49.104Z" itemprop="datePublished">2022-01-05</time>
-</a>
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/05/hello-world/">Hello World</a>
-    </h1>
-  
 
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="tw0_one">
+      <meta itemprop="description" content="山河远阔，人间星河">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tw0的小站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-05 22:23:13" itemprop="dateCreated datePublished" datetime="2022-01-05T22:23:13+08:00">2022-01-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-01-06 00:02:45" itemprop="dateModified" datetime="2022-01-06T00:02:45+08:00">2022-01-06</time>
+              </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <p>MIME</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/05/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="tw0_one">
+      <meta itemprop="description" content="山河远阔，人间星河">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tw0的小站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/05/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-05 22:19:49" itemprop="dateCreated datePublished" datetime="2022-01-05T22:19:49+08:00">2022-01-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -269,103 +314,207 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/05/hello-world/" data-id="cky1mow2j00009svc506meo2y" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="tw0_one"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">tw0_one</p>
+  <div class="site-description" itemprop="description">山河远阔，人间星河</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tw0-one" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tw0-one" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:tw0_one@163.com" title="E-Mail → mailto:tw0_one@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tw0-one.github.io/images/qq.png" title="QQ → https:&#x2F;&#x2F;tw0-one.github.io&#x2F;images&#x2F;qq.png" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tw0-one.github.io/images/wechat.png" title="WeChat → https:&#x2F;&#x2F;tw0-one.github.io&#x2F;images&#x2F;wechat.png" rel="noopener" target="_blank"><i class="fab fa-weixin fa-fw"></i>WeChat</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://1cec0la.github.io/" title="https:&#x2F;&#x2F;1cec0la.github.io&#x2F;" rel="noopener" target="_blank">1ceC0la</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">tw0_one</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共2.5k字</span>
+</div>
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-</article>
-
-
 
   
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
-    </div>
-  </div>
+<script src="/js/schemes/pisces.js"></script>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/01/05/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/05/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<script src="/js/next-boot.js"></script>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/js/script.js"></script>
+  
+<script src="/js/local-search.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>
