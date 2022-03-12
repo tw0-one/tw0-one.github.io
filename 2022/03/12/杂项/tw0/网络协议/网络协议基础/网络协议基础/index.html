@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="HTTP协议简介HTTP协议的定义 HTTP协议是Hyper Text Transfer Protocol(超文本传输协议)的缩写，是用于万维网(WWW:World Wide Web)服务器传输超文本到本地浏览器的传送协议。 HTTP是一个基于TCP&#x2F;IP通信协议来传递数据(HTML文件，图片文件，查询结果等)。  HTTP协议工作于客户端-服务端架构上(C&#x2F;S)。浏览器作为HTTP客户端通过UR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络协议基础">
+<meta property="og:url" content="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="tw0的小站">
+<meta property="og:description" content="HTTP协议简介HTTP协议的定义 HTTP协议是Hyper Text Transfer Protocol(超文本传输协议)的缩写，是用于万维网(WWW:World Wide Web)服务器传输超文本到本地浏览器的传送协议。 HTTP是一个基于TCP&#x2F;IP通信协议来传递数据(HTML文件，图片文件，查询结果等)。  HTTP协议工作于客户端-服务端架构上(C&#x2F;S)。浏览器作为HTTP客户端通过UR">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/image-20220113233219198.png">
+<meta property="article:published_time" content="2022-03-12T04:37:12.674Z">
+<meta property="article:modified_time" content="2022-03-12T04:58:03.971Z">
+<meta property="article:author" content="tw0_one">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/image-20220113233219198.png">
+
+<link rel="canonical" href="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>网络协议基础 | tw0的小站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="tw0的小站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">tw0的小站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">极简主义</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于我</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="tw0_one">
+      <meta itemprop="description" content="山河远阔，人间星河">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tw0的小站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          网络协议基础
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-12 12:37:12 / 修改时间：12:58:03" itemprop="dateCreated datePublished" datetime="2022-03-12T12:37:12+08:00">2022-03-12</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="HTTP协议简介"><a href="#HTTP协议简介" class="headerlink" title="HTTP协议简介"></a>HTTP协议简介</h2><h3 id="HTTP协议的定义"><a href="#HTTP协议的定义" class="headerlink" title="HTTP协议的定义"></a><code>HTTP</code>协议的定义</h3><ul>
+<li><code>HTTP</code>协议是<code>Hyper Text Transfer Protocol</code>(超文本传输协议)的缩写，是用于万维网(<code>WWW:World Wide Web</code>)服务器传输超文本到本地浏览器的传送协议。</li>
+<li><code>HTTP</code>是一个基于<code>TCP/IP</code>通信协议来传递数据(<code>HTML</code>文件，图片文件，查询结果等)。</li>
+</ul>
+<p><code>HTTP</code>协议工作于客户端-服务端架构上(<code>C/S</code>)。浏览器作为<code>HTTP</code>客户端通过<code>URL</code>向<code>HTTP</code>服务端即<code>WEB</code>服务器发送所有请求。<code>Web</code>服务器根据收到的请求，向客户端发送响应信息。</p>
+<p>默认端口80。</p>
+<p><code>HTTPS</code>默认端口443。</p>
+<h3 id="HTTP协议的特点"><a href="#HTTP协议的特点" class="headerlink" title="HTTP协议的特点"></a><code>HTTP</code>协议的特点</h3><ul>
+<li>简单快速: 客户向服务器请求服务时，只需传送请求方法(常用<code>POST</code>,<code>GET</code>,<code>HEAD</code>)和路径。由于<code>HTTP</code>协议简单，使得<code>HTTP</code>服务器的程序规模小，因而通信速度很快。</li>
+<li>灵活: <strong>运行传输任意类型的数据对象，由<code>Content-Type</code>标记。</strong></li>
+<li>无连接: 限制每次连接只处理一个请求。服务器处理完客户的请求，并受到客户的应答后，即断开连接。</li>
+<li>无状态: 协议对于事务处理没有记忆能力。</li>
+</ul>
+<h3 id="HTTP的请求方法"><a href="#HTTP的请求方法" class="headerlink" title="HTTP的请求方法"></a><code>HTTP</code>的请求方法</h3><ul>
+<li><table>
+<thead>
+<tr>
+<th>No.</th>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>GET</td>
+<td>请求指定的页面信息，并返回实体主体。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HEAD</td>
+<td>类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
+</tr>
+<tr>
+<td>3</td>
+<td>POST</td>
+<td>向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PUT</td>
+<td>从客户端向服务器传送的数据取代指定的文档的内容。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PATCH</td>
+<td>用于对资源进行部分修改。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>DELETE</td>
+<td>请求服务器删除指定的页面。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CONNECT</td>
+<td>HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</td>
+</tr>
+<tr>
+<td>8</td>
+<td>OPTIONS</td>
+<td>允许客户端查看服务器的性能。</td>
+</tr>
+<tr>
+<td>9</td>
+<td>TRACE</td>
+<td>回显服务器收到的请求，主要用于测试或诊断。</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="HTTP响应状态码"><a href="#HTTP响应状态码" class="headerlink" title="HTTP响应状态码"></a>HTTP响应状态码</h3><p>HTTP状态码（<code>Status-Code</code>）由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。<code>HTTP</code>状态码共分为5种类型：</p>
+<pre><code>1xx 信息响应类，表示接收到请求并且继续处理
+2xx 处理成功响应类，表示动作被成功接收、理解和接受
+3xx 重定向响应类，为了完成指定的动作，必须接受进一步处理
+4xx 客户端错误，客户请求包含语法错误或者是不能正确执行
+5xx 服务端错误，服务器不能正确执行一个正确的请求
+</code></pre>
+<p>常见状态代码、状态描述、说明：</p>
+<pre><code>200 OK //客户端请求成功
+400 Bad Request //客户端请求有语法错误，不能被服务器所理解
+401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
+403 Forbidden //服务器收到请求，但是拒绝提供服务
+404 Not Found //请求资源不存在，eg：输入了错误的URL
+500 Internal Server Error //服务器发生不可预期的错误
+503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常 
+</code></pre>
+<h3 id="HTTP不安全因素"><a href="#HTTP不安全因素" class="headerlink" title="HTTP不安全因素"></a><code>HTTP</code>不安全因素</h3><ul>
+<li>通信使用明文(内容可能被<strong>窃听</strong>)。</li>
+<li>不验证通信方身份(有可能遭遇<strong>伪装</strong>)。</li>
+<li>无法验证报文的完整性(报文有可能已经遭遇<strong>篡改</strong>)。</li>
+</ul>
+<h2 id="SSL协议简介"><a href="#SSL协议简介" class="headerlink" title="SSL协议简介"></a>SSL协议简介</h2><h3 id="SSL协议的定义"><a href="#SSL协议的定义" class="headerlink" title="SSL协议的定义"></a><code>SSL</code>协议的定义</h3><p>安全套接字（<code>Secure Socket Layer，SSL</code>）协议是<code>Web</code>浏览器与<code>Web</code>服务器之间安全交换信息的协议，提供两个基本的安全服务：鉴别与保密。</p>
+<p>SSL协议位于TCP协议与各种应用层之间，为数据通信提供数据加密、服务器认真、消息完整性以及可选的客户机认证。</p>
+<p>SSL协议可以分为两层:</p>
+<ul>
+<li>SSL记录协议: 它建立在可靠的传输协议(如:TCP)之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。</li>
+<li>SSL握手协议: 它建立在SSL记录协议基础之上，用与于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换密钥等。</li>
+</ul>
+<p><code>TLS</code>: <code>SSL</code>更新到3.0时，<code>IETF</code>对3.0进行了标准化，并添加了少数机制(但是几乎和<code>SSL3.0</code>无差异)。主要目标是使<code>SSL</code>更安全。</p>
+<h3 id="SSL协议的特性"><a href="#SSL协议的特性" class="headerlink" title="SSL协议的特性"></a><code>SSL</code>协议的特性</h3><ul>
+<li>保密：在握手协议中定义了会话密钥后，所有的消息都被加密。</li>
+<li>鉴别：可选的客户端认证，和强制的服务器端认证。</li>
+<li>完整性：传送的消息包括消息完整性检查（使用<code>MAC</code>）。</li>
+</ul>
+<p><code>HTTPS</code> = <code>HTTP</code> + <code>TLS</code>/<code>SSL</code></p>
+<h2 id="DNS协议简介"><a href="#DNS协议简介" class="headerlink" title="DNS协议简介"></a>DNS协议简介</h2><h3 id="DNS协议的定义"><a href="#DNS协议的定义" class="headerlink" title="DNS协议的定义"></a><code>DNS</code>协议的定义</h3><p><code>DNS</code>协议是域名系统(<code>Domian Name System</code>)的缩写，就是<strong>用来将域名解析到<code>IP</code>地址的一种协议。</strong></p>
+<p><strong><code>DNS</code>协议基于<code>UDP</code>和<code>TCP</code>协议的，端口号53，用户到服务器采用<code>UDP</code>协议，<code>DNS</code>服务器通信采用<code>TCP</code>协议。</strong></p>
+<h3 id="DNS系统的组成"><a href="#DNS系统的组成" class="headerlink" title="DNS系统的组成"></a><code>DNS</code>系统的组成</h3><ul>
+<li>域名空间和资源记录。</li>
+<li>域名服务器: 提供域名空间结构及信息的服务器程序。</li>
+<li>解析器: 应客户程序的要求从域名服务器抽取信息。</li>
+</ul>
+<p>域名空间被设计为树状结构</p>
+<img src="/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/image-20220113233219198.png" class="" title="image-20220113233219198">
+
+<p>eg :<code>www.baidu.com</code></p>
+<ol>
+<li><code>com</code>: 一级域名. 表示这是一个企业域名。同级的还有 “net”(网络提供商), “<code>org</code>”(⾮非盈利组织) 等。</li>
+<li><code>baidu</code>: 二级域名，指公司名。</li>
+<li><code>www</code>: 只是一种习惯用法。</li>
+</ol>
+<h3 id="域名服务器"><a href="#域名服务器" class="headerlink" title="域名服务器"></a>域名服务器</h3><p>由高向低进行层次划分，可分为以下几大类：</p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>根域名服务器</td>
+<td>最高层次的域名服务器，本地域名服务器解析不了的域名就会向其求助</td>
+</tr>
+<tr>
+<td>顶级域名服务器</td>
+<td>负责管理在该顶级域名服务器下注册的二级域名</td>
+</tr>
+<tr>
+<td>权限域名服务器</td>
+<td>负责一个区的域名解析工作</td>
+</tr>
+<tr>
+<td>本地域名服务器</td>
+<td>当一个主机发出<code>DNS</code>查询请求时，这个查询请求首先发给本地域名服务器</td>
+</tr>
+</tbody></table>
+<h3 id="DNS查询有中两种查询方式"><a href="#DNS查询有中两种查询方式" class="headerlink" title="DNS查询有中两种查询方式"></a>DNS查询有中两种查询方式</h3><ul>
+<li>递归查询：本机向本地域名服务器发出一次查询请求，就静待最终的结果。如果本地域名服务器无法解析，自己会以<code>DNS</code>客户机的身份向其它域名服务器查询，直到得到最终的<code>IP</code>地址告诉本机。</li>
+<li>迭代查询：本地域名服务器向根域名服务器查询，根域名服务器告诉它下一步到哪里去查询，然后它再去查，每次它都是以客户机的身份去各个服务器查询。</li>
+</ul>
+<p>通俗地说，<strong>递归</strong>就是把一件事情交给别人，如果事情没有办完，哪怕已经办了很多，都不要把结果告诉我，我要的是你的最终结果，而不是中间结果。如果你没办完，请你找别人办完。<br><strong>迭代</strong>则是我交给你一件事，你能办多少就告诉我你办了多少，然后剩下的事情就由我来办。</p>
+<h2 id="ARP协议简介"><a href="#ARP协议简介" class="headerlink" title="ARP协议简介"></a>ARP协议简介</h2><h3 id="ARP协议的定义"><a href="#ARP协议的定义" class="headerlink" title="ARP协议的定义"></a><code>ARP</code>协议的定义</h3><p>地址解析协议(<code>Address Resolution Protoco</code>)，其基本功能为<strong>透过目标设备<code>IP</code>地址，查询目标设备的<code>MAC</code>地址</strong>，以保证通信的顺利进行。它是<code>IPv4</code>网络层必不可少的协议，不过在<code>IPv6</code>中已不再适用，并被邻居发现协议<code>NDP</code>替代。</p>
+<h3 id="ARP协议的缺陷"><a href="#ARP协议的缺陷" class="headerlink" title="ARP协议的缺陷"></a><code>ARP</code>协议的缺陷</h3><ul>
+<li><code>ARP</code>请求与应答不需要配对(虚假<code>ARP</code>应答)。</li>
+<li><code>ARP</code> <code>reply</code>也可以广播</li>
+<li>以太帧的源<code>MAC</code>和<code>ARP</code>包里的发起端<code>MAC</code>可以不同(<code>ARP</code>依靠的是<code>ARP</code>包里的发起端<code>MAC</code>)。</li>
+<li>以太帧的源<code>MAC</code>可以是任意的(无法查找发起<code>ARP</code>欺骗的主机<code>MAC</code>)。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="tw0_one 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="tw0_one 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>tw0_one
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/" title="网络协议基础">http://example.com/2022/03/12/杂项/tw0/网络协议/网络协议基础/网络协议基础/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%9F%BA%E7%A1%80/" rel="prev" title="网络设备基础">
+      <i class="fa fa-chevron-left"></i> 网络设备基础
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/" rel="next" title="网络协议概述">
+      网络协议概述 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">HTTP协议简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">HTTP协议的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">HTTP协议的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E7%9A%84%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">HTTP的请求方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">1.4.</span> <span class="nav-text">HTTP响应状态码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E4%B8%8D%E5%AE%89%E5%85%A8%E5%9B%A0%E7%B4%A0"><span class="nav-number">1.5.</span> <span class="nav-text">HTTP不安全因素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSL%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">SSL协议简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">2.1.</span> <span class="nav-text">SSL协议的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">2.2.</span> <span class="nav-text">SSL协议的特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNS%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B"><span class="nav-number">3.</span> <span class="nav-text">DNS协议简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">3.1.</span> <span class="nav-text">DNS协议的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">3.2.</span> <span class="nav-text">DNS系统的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">3.3.</span> <span class="nav-text">域名服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS%E6%9F%A5%E8%AF%A2%E6%9C%89%E4%B8%AD%E4%B8%A4%E7%A7%8D%E6%9F%A5%E8%AF%A2%E6%96%B9%E5%BC%8F"><span class="nav-number">3.4.</span> <span class="nav-text">DNS查询有中两种查询方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARP%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B"><span class="nav-number">4.</span> <span class="nav-text">ARP协议简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ARP%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">4.1.</span> <span class="nav-text">ARP协议的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ARP%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%BC%BA%E9%99%B7"><span class="nav-number">4.2.</span> <span class="nav-text">ARP协议的缺陷</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="tw0_one"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">tw0_one</p>
+  <div class="site-description" itemprop="description">山河远阔，人间星河</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tw0-one" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tw0-one" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:tw0_one@163.com" title="E-Mail → mailto:tw0_one@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tw0-one.github.io/images/qq.png" title="QQ → https:&#x2F;&#x2F;tw0-one.github.io&#x2F;images&#x2F;qq.png" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tw0-one.github.io/images/wx.png" title="WeChat → https:&#x2F;&#x2F;tw0-one.github.io&#x2F;images&#x2F;wx.png" rel="noopener" target="_blank"><i class="fab fa-weixin fa-fw"></i>WeChat</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://1cec0la.github.io/" title="https:&#x2F;&#x2F;1cec0la.github.io&#x2F;" rel="noopener" target="_blank">1ceC0la</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; Wed Jan 05 2022 08:00:00 GMT+0800 (中国标准时间) – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">tw0_one</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共13.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

